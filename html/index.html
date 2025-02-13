@@ -3,48 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Wuthering Waves</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background-color: #121212;
-            color: white;
-        }
-        .game-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-            padding: 20px;
-        }
-        .side-menu {
-            background-color: #181818;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .side-menu button {
-            background: none;
-            border: none;
-            color: white;
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .side-menu button:hover, .active {
-            background-color: #333;
-        }
-    </style>
-    <script>
-        function changeGame(imageSrc, title, description) {
-            document.getElementById('carouselImage').src = imageSrc;
-            document.getElementById('gameTitle').innerText = title;
-            document.getElementById('gameDescription').innerText = description;
-        }
-    </script>
 </head>
 <body>
     <div class="container-fluid">
@@ -53,29 +14,56 @@
                 <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img id="carouselImage" src="https://assets.2k.com/1a6ngf98576c/3tLMbqJNHqvfx8ROZH4zOh/313759e047ad8e81a97dbc9724646841/Civ7_Spain.png" class="d-block w-100" alt="Game Image">
+                            <img id="carouselImage" src="../resources/images/orfertasInviernoGrande.avif" class="d-block w-100" alt="Game Image">
                         </div>
                     </div>
                     <div class="game-overlay">
-                        <h2 id="gameTitle">WUTHERING WAVES</h2>
-                        <p id="gameDescription"><strong>NUEVA ACTUALIZACIÓN</strong><br>Llega la versión 2.1, "Canto del pájaro, oda de la ola". Conoce a los nuevos Resonadores de 5 estrellas: "Phoebe" y "Brant"</p>
-                        <p>Gratis</p>
-                        <button class="btn btn-light">Juega gratis</button>
+                        <h2 id="gameTitle">Ofertas de Invierno</h2>
+                        <p id="gameDescription"><strong>DEL 10 AL 24 DE FEBRERO</strong><br>Ahorra hasta un 75 % con las mejores ofertas de la temporada antes de que la nieve se derrita.</p>
+                        <p id="gameDescription2"></p>
+                        <p id="prize"></p>
+                        <button class="btn btn-light">¡Ahorra hoy!</button>
                         <button class="btn btn-outline-light">A la lista de deseos</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="side-menu">
-                    <button onclick="changeGame('../resources/images/prueba.png', 'Wuthering Waves', 'Nueva actualización: Versión 2.1')">Wuthering Waves</button>
-                    <button onclick="changeGame('image2.png', 'Ofertas de invierno', 'Descubre descuentos exclusivos')">Ofertas de invierno</button>
+                <ul class="side-menu">
+                    <li class="d-flex flex-row " onclick="changeGame('../resources/images/orfertasInviernoGrande.avif', 'Ofertas de Invierno', 'Nueva actualización: Versión 2.1')">
+                        <img class="img-hcard" src="../resources/images/ofertasInvierno.avif" alt="ofertas invierno">
+                    <button >Ofertas de invierno</button>
+                    </li>
+
+                    <li class="d-flex flex-row" onclick="changeGame('../resources/images/civilization7Grande.jpg', 'Civilization VII', 'DISPONIBLE AHORA', 'Vuelve la galardonada franquicia de juegos de estrategia con un nuevo y revolucionario capítulo.', '69,99 €')">
+                        <img class="img-hcard" src="../resources/images/civilization7.jpg" alt="">
+                    <button >Civilization VII</button>
+                    </li>
+
+                    <li class="d-flex flex-row ">
+                        <img class="img-hcard" src="../resources/images/ofertasInvierno.avif" alt="">
                     <button onclick="changeGame('image3.png', 'Sid Meier’s Civilization® VII', 'Domina el mundo con estrategia')">Sid Meier’s Civilization® VII</button>
+                    </li>
+
+                    <li class="d-flex flex-row ">
+                        <img class="img-hcard" src="../resources/images/ofertasInvierno.avif" alt="">
                     <button onclick="changeGame('image4.png', 'Kingdom Come: Deliverance II', 'Vive una historia medieval épica')">Kingdom Come: Deliverance II</button>
+                    </li>
+
+                    <li class="d-flex flex-row ">
+                        <img class="img-hcard" src="../resources/images/ofertasInvierno.avif" alt="">
                     <button onclick="changeGame('image5.png', 'Genshin Impact', 'Explora un mundo abierto lleno de magia')">Genshin Impact</button>
+                    </li>
+
+                    <li class="d-flex flex-row ">
+                        <img class="img-hcard" src="../resources/images/ofertasInvierno.avif" alt="">
                     <button onclick="changeGame('image6.png', 'Farming Simulator 25', 'Conviértete en un agricultor profesional')">Farming Simulator 25</button>
-                </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

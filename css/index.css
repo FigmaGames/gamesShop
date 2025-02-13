@@ -1,0 +1,38 @@
+.img-hcard{
+    width: 50px;
+    height: 50px;
+}
+body {
+    background-color: #121212 !important ;
+    color: white;
+}
+.game-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 20px;
+}
+.side-menu {
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 10px;
+}
+.side-menu button {
+    background: none;
+    border: none;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+.side-menu button:hover, .active {
+    background-color: #333;
+}
+.side-menu li:hover, .active {
+    background-color: #333;
+    cursor: pointer;
+}

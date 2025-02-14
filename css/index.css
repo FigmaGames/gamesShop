@@ -36,6 +36,7 @@ li {
     flex-direction: row; 
     margin-right: 10px;
     margin-bottom: 25px;
+    
 }
 
 .nav-links a {
@@ -43,7 +44,10 @@ li {
 }
 
 .logo {
-    width: 30px;
+    display: flex;
+    align-self: center;
+    width: 70px;
+    
 }
 
 .menu {
@@ -64,24 +68,25 @@ li {
 }
 
 .store {
-    padding-left: 35px;
-    padding-right: 30px;
-    padding-top: 8px;
-    font-size: 11.5px;
+    font-size: 1.5rem;
+  text-transform: uppercase;  
+  letter-spacing: 3px; 
+  text-decoration: none;
     color: #CCCCCC;
 }
 
 .dist {
     padding-right: 30px;
+    padding-left: 20px;
     padding-top: 8px;
-    font-size: 11.5px;
+    font-size: 15px;
     color: #CCCCCC;
 }
 
 .support {
     padding-right: 25px;
     padding-top: 8px;
-    font-size: 11.5px;
+    font-size: 15px;
     color: #CCCCCC;
 }
 
@@ -95,7 +100,7 @@ li {
 .unreal-eng {
     padding-left: 30px;
     padding-top: 8px;
-    font-size: 12px;
+    font-size: 13px;
     color: #CCCCCC;
 }
 

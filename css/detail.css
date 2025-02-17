@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #1f1f1f;       /* Gris muy oscuro */
+    --secondary-color: #333333;     /* Gris oscuro */
+    --accent-color: #444444;        /* Gris ligeramente más claro para acentos */
+    --background-color: #121212;    /* Fondo casi negro */
+    --surface-color: #181818;       /* Superficie: ligeramente más claro que el background */
+    --text-primary: #e0e0e0;        /* Texto principal en tono claro */
+    --text-secondary: #aaaaaa;      /* Texto secundario */
+    --info-color: #bb86fc;          /* Púrpura para información */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: var(--text-primary);
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar.bg-dark {
+    position: relative;
+}
+.game-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.yellow-button {
+    background-color: #ffc107;
+    color: black;
+}
+.game-image {
+    max-height: 350px;
+    object-fit: cover;
+}
+.summary-tabs {
+    border-bottom: 1px solid gray;
+}
+.tab-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.tab-link.active {
+    border-bottom: 3px solid #ffc107;
+}

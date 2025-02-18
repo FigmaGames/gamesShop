@@ -7,16 +7,17 @@
 
 /* Estilos generales del cuerpo de la página */
 body {
-    font-family: "Open Sans", sans-serif, arial;
-    background-color: #121212;
+   font-family:"Open Sans", sans-serif, arial;
+   background-color: #121212;
+   text-decoration: none;
 }
 
-/* Estilos para enlaces */
+/* Estilos para los enlaces */
 a {
     text-decoration: none;
 }
 
-/* Estilos para listas */
+/* Estilos para las listas */
 li {
     list-style: none;
     justify-content: center;
@@ -36,19 +37,27 @@ li {
     width: 100%;
 }
 
+/* Estilos para el contenedor de la derecha en la barra de navegación */
+.divh{
+    display: flex; 
+    flex-direction: row; 
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
 /* Estilos para los enlaces de la barra de navegación */
 .nav-links a {
     color: #CCCCCC;
 }
 
-/* Estilos para el logo en la barra de navegación */
+/* Estilos para el logo */
 .logo {
     display: flex;
     align-self: center;
     width: 70px;
 }
 
-/* Estilos para el menú de navegación */
+/* Estilos para el menú */
 .menu {
     display: flex;
     font-size: 18px;
@@ -56,7 +65,7 @@ li {
     align-items: center;
 }
 
-/* Estilos para el botón de inicio de sesión */
+/* Efecto hover para el botón de inicio de sesión */
 .sign:hover {
     background-color: #0078E5;
     transition: 0.3s ease;
@@ -68,16 +77,99 @@ li {
     font-size: 9.5px;
 }
 
-/* Estilos para el texto "STORE" en la barra de navegación */
+/* Estilos para el texto "STORE" */
 .store {
     font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    text-transform: uppercase;  
+    letter-spacing: 3px; 
     text-decoration: none;
     color: #CCCCCC;
 }
 
-/* Estilos para el contenedor de la barra de navegación secundaria */
+/* Estilos para el texto "Distribuir" */
+.dist {
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+/* Estilos para el texto "Asistencia" */
+.support {
+    padding-right: 25px;
+    padding-top: 8px;
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+/* Estilos para la línea vertical en la barra de navegación */
+.vl {
+    margin-top: 2px;
+    margin-left: 10px;
+    border-left: 0.5px solid #CCCCCC;
+    height: 30px;
+}
+
+/* Estilos para el texto "Unreal Engine" */
+.unreal-eng {
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+/* Estilos para los botones de la barra de navegación */
+.nav-right button {
+    background-color: #0078f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilos para el ícono del globo */
+.globe {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.sign {
+    position: absolute;
+    background-color: #0078F2;
+    font-size: 10.5px;
+    width: 127px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los enlaces del menú */
+.menu li a {
+    color: white;
+}
+
+/* Estilos para el texto "Iniciar sesión" */
+.sign-in {
+    padding-right: 25px;
+    padding-left: 10px;
+}
+
+/* Estilos para los íconos de Font Awesome */
+.fa{
+    font-size:19px
+}
+
+.fas {
+    padding-left: 50px;
+    font-size:19px
+}
+
+/* Estilos para la barra de navegación secundaria */
 .nav {
     width: 100vw;
     display: flex;
@@ -90,7 +182,7 @@ li {
     width: 100%;
 }
 
-/* Estilos para el contenedor del campo de búsqueda */
+/* Estilos para el contenedor del input de búsqueda */
 .input-container {
     position: relative;
     left: 10vw;
@@ -100,7 +192,7 @@ li {
     height: 40px;
 }
 
-/* Estilos para el icono de búsqueda */
+/* Estilos para el ícono de búsqueda */
 .nav i {
     position: relative;
     left: 25px;
@@ -115,7 +207,7 @@ li {
     align-items: center;
 }
 
-/* Estilos para el campo de búsqueda */
+/* Estilos para el input de búsqueda */
 .input {
     border-radius: 20px;
     border: none;
@@ -127,7 +219,7 @@ li {
     max-width: 16vw;
 }
 
-/* Estilos para los enlaces de la barra de navegación secundaria */
+/* Estilos para los textos "Descubrir", "Explorar", "Noticias" */
 .dsc {
     position: relative;
     display: flex;
@@ -136,7 +228,7 @@ li {
     color: #CCCCCC;
 }
 
-/* Estilos para el contenedor de los enlaces de la barra de navegación secundaria */
+/* Estilos para el contenedor de los textos "Descubrir", "Explorar", "Noticias" */
 .abc {
     position: relative;
     display: flex;
@@ -153,7 +245,12 @@ li {
     padding-left: 30px;
 }
 
-/* Estilos para el contenido principal */
+/* Efecto hover para los textos "Descubrir", "Explorar", "Noticias" */
+.dsc:hover {
+    color: #F5F5F5;
+}
+
+/* Estilos para el contenedor principal del contenido */
 .content-c {
     display: flex;
     width: 75%;
@@ -162,7 +259,7 @@ li {
     gap: 0px;
 }
 
-/* Estilos para el carrusel de imágenes */
+/* Estilos para el carrusel */
 .carousel {
     height: 100%;
     width: 79%;
@@ -203,39 +300,45 @@ li {
     height: 16%;
 }
 
-/* Estilos para las imágenes de los componentes laterales */
+/* Efecto hover para los componentes del contenido lateral */
+.side-component:hover {
+    background-color: #CCCCCC;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para las imágenes del contenido lateral */
 .side-component img {
     border-radius: 15px;
     width: 16%;
     margin: 2vh;
 }
 
-/* Estilos para las imágenes dentro del carrusel */
+/* Estilos para las imágenes del carrusel */
 .imgsi {
     min-width: 100%;
     height: 100%;
     position: relative;
 }
 
-/* Estilos para los elementos superpuestos en las imágenes del carrusel */
+/* Estilos para el contenedor de las imágenes dentro del carrusel */
 .imgsin {
     display: flex;
     position: absolute;
     left: 6%;
     top: 10%;
     height: 30%;
-    top: 25%;
+    top: 25%; 
     height: 25%;
 }
 
-/* Estilos para las imágenes dentro de los elementos superpuestos */
+/* Estilos para las imágenes dentro del carrusel */
 .imgsin img {
     object-fit: cover;
     min-width: 100%;
     height: 100%;
 }
 
-/* Estilos para la descripción superpuesta en las imágenes del carrusel */
+/* Estilos para la descripción de las imágenes del carrusel */
 .imgsindsc {
     position: absolute;
     display: flex;
@@ -249,7 +352,12 @@ li {
     top: 55%;
 }
 
-/* Estilos para el precio y botón de compra superpuestos en las imágenes del carrusel */
+/* Estilos para el título de la descripción del carrusel */
+.imgsindsc h1 {
+    font-size: 1rem;
+}
+
+/* Estilos para el precio y el botón de compra en el carrusel */
 .imgsinprice {
     position: absolute;
     display: flex;
@@ -260,7 +368,7 @@ li {
     gap: 3vh;
 }
 
-/* Estilos para el botón de compra */
+/* Estilos para el botón de compra en el carrusel */
 .imgsinprice a {
     width: 80%;
     display: flex;
@@ -271,27 +379,126 @@ li {
     border-radius: 5px;
 }
 
-/* Estilos para el pie de página */
-footer {
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 468px) {
+    .imgsindsc {
+        display: none;
+    }
+
+    .imgsindsc h1 {
+        display: none;
+        font-size: 0.2rem;
+    }
+
+    .unreal-eng {
+        display: none;
+    }
+
+    .side-content {
+        gap: 0px;
+    }
+
+    .side-component img {
+        border-radius: 20px;
+        width: 20%;
+        margin: 0.5vh;
+        font-size: 11px;
+    }
+
+    .content-c {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto auto;
+        font-size: 2px;
+    }
+}
+
+/* Media queries para tablets */
+@media screen and (max-width: 768px) {
+    .imgsindsc span {
+        font-size: 0.5rem;
+    }
+
+    .imgsindsc h1 {
+        font-size: 0.5rem;
+    }
+
+    .unreal-eng {
+        display: none;
+    }
+
+    .side-content {
+        gap: 0px;
+    }
+
+    .side-component img {
+        border-radius: 20px;
+        width: 20%;
+        margin: 0.5vh;
+        font-size: 11px;
+    }
+
+    .content-c {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto auto;
+        font-size: 2px;
+    }
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 1000px) {
+    .imgsindsc span {
+        font-size: 0.7rem;
+    }
+
+    .imgsindsc h1 {
+        display: none;
+        font-size: 0.7rem;
+    }
+
+    .content-c {
+        font-size: 8px;
+    }
+}
+
+/* Media queries para pantallas medianas */
+@media screen and (max-width: 1250px) {
+    .imgsindsc span {
+        font-size: 0.8rem;
+    }
+
+    .imgsindsc h1 {
+        display: none;
+        font-size: 0.8rem;
+    }
+
+    .content-c {
+        font-size: 8px;
+    }
+}
+
+/* Estilos para el footer */
+footer{
     background-color: #202020;
     height: 100%;
 }
 
-/* Estilos para la primera sección del pie de página */
-.footer-1 {
+.footer-1{
     font-size: 32px;
     color: #CCCCCC;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1%;
+    gap:1%;
     width: 90vw;
     margin: 0 auto;
 }
 
-/* Estilos para el contenedor del pie de página */
-.footer-container {
-    padding-top: 2%;
+.footer-container{
+    padding-top:2% ;
     font-size: 32px;
     color: #CCCCCC;
     margin: 0 auto;
@@ -301,45 +508,187 @@ footer {
     justify-content: space-between;
 }
 
-/* Estilos para el contenedor de texto del pie de página */
-.text-container {
+.text-container{
     width: 90vw;
-    color: #CCCCCC;
+    color:#CCCCCC ;
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top:2% ;
 }
 
-/* Estilos para el contenedor de columnas en el pie de página */
-.dsc-container {
+.dsc-container{
     display: flex;
     flex-direction: row;
     gap: 2%;
     padding-bottom: 2.5%;
 }
 
-/* Estilos para las columnas del pie de página */
-.columnc {
+.columnc{
     font-size: 13px;
     color: #e7e7e7;
     display: flex;
     flex-direction: column;
 }
 
-/* Estilos para los elementos dentro de las columnas del pie de página */
-.columnc span {
+.columnc span{
     padding-bottom: 7%;
 }
 
-/* Estilos para el texto de derechos de autor */
-.rights {
+.rights{
     padding-top: 3%;
     font-size: 11.36px;
     width: 45vw;
     line-height: 25px;
 }
 
-/* Estilos para los enlaces del pie de página al pasar el ratón */
-footer span:hover {
+footer span:hover{
     color: #0078E5;
     transition: 0.1s ease;
 }
+
+/* Estilos personalizados para las imágenes y descripciones */
+.imgsindsc-custom-1 {
+    left: 5%;
+    top: 50%;
+}
+
+.imgsin-custom-1 {
+    height: 17%;
+    top: 15%;
+}
+
+.imgsindsc-custom-2 {
+    left: 5%;
+    top: 40%;
+    width: 40%;
+}
+
+.imgsin-custom-2 {
+    height: 8%;
+    top: 30%;
+}
+
+.imgsindsc-custom-3 {
+    left: 5%;
+    top: 45%;
+    width: 40%;
+}
+
+.imgsin-custom-3 {
+    height: 12%;
+    top: 25%;
+}
+
+.imgsinprice-custom-1 {
+    bottom: 5%;
+}
+
+.imgsinprice-custom-2 {
+    bottom: 5%;
+}
+
+/* Estilos para el texto del footer */
+.footer-text {
+    color: #cccc;
+    padding-bottom: 1%;
+    font-size: 13px;
+}
+
+.footer-made-by {
+    padding-bottom: 0.7%;
+}
+
+.footer-hr {
+    border-color: rgb(63, 63, 63);
+}
+
+.footer-bottom {
+    font-size: 12px;
+    padding-top: 3%;
+}
+
+.footer-bottom-links {
+    font-size: 12px;
+}
+
+.footer-bottom-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    padding-bottom: 3%;
+}
+
+
+
+
+.freegames-container{
+    width: 75vw;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    margin-top: 8%;
+    border-radius: 10px;
+    background-color: #121212;
+  }
+  .freegames{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #F5F5F5;
+    
+  }
+  .freegames h2 a{
+    color: #F5F5F5;
+    font-size: 22px;
+  }
+  .freegames-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    height: 32px;
+    width: 129px;
+    border-color: white;
+    color: #CCCCCC;
+    border-width: 0.5px ;
+    
+    border-style: solid;
+   
+  }
+  .freegamesthumb{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    padding-top: 2%;
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    
+  
+  }
+  .freegamesthumb-content{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 0 auto;
+    gap: 1.7vh;
+    
+  }
+  .freegamesthumb-content img{
+    border-radius: 8px;
+  }
+
+  .sdsc{
+    font-size: 16px;
+    color: #F5F5F5;
+  }
+  .stitle{
+    color: #F5F5F599;
+    font-size: 12px;
+  }
+
+
+  

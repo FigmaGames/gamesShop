@@ -18,31 +18,38 @@
 
 
   <header>
-    <div class="navbar ">
-        <div class="divh">
-        <img class="logo"  src="../resources/images/logorecortado.png" alt="">
-        <div class="store" >STORE</div>
-        <div class="dist"><a class="nav-link dropdown-toggle dist" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Distribuir
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Foro</a></li>
-          <li><a class="dropdown-item" href="#">Información</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../resources/images/logorecortado.png" alt="Epic Games Logo" height="30" class="d-inline-block align-top">
+              STORE
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Asistencia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Distribuir
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                          <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                  <span class="text-white me-3 fs-5">&#127758;</span>
+                  <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                  <button class="btn btn-primary">Descargar</button>
+              </div>
+          </div>
       </div>
-        <div class="support">AYUDA</div>
-        <div class="vl"></div>
-        <div class="unreal-eng">UNREAL ENGINE</div>
-        </div>
-        <ul class="nav-links">
-          <div class="menu">
-            <i class="fa">&#xf0ac;</i>
-            <i class='fas'>&#xf4ff;</i>
-            <li class="sign-in"><a href="#">INICIAR SESION</a></li>   
-            <li class="sign"><a href="#">DESCARGAR</a></li>
-            </div>
-         </ul>
-     </div>
+  </nav>
     <div class="nav">
       <div class="input-container">
         <i class="fa fa-search"></i>

@@ -1,18 +1,22 @@
+/* Reset básico para eliminar márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos generales del cuerpo de la página */
 body {
-   font-family:"Open Sans", sans-serif, arial;
-   background-color: #121212;
+    font-family: "Open Sans", sans-serif, arial;
+    background-color: #121212;
 }
 
+/* Estilos para enlaces */
 a {
     text-decoration: none;
 }
 
+/* Estilos para listas */
 li {
     list-style: none;
     justify-content: center;
@@ -20,7 +24,7 @@ li {
     align-items: center;
 }
 
-/* NAVBAR STYLING */
+/* Estilos para la barra de navegación */
 .navbar {
     height: 52px;
     display: flex;
@@ -31,25 +35,20 @@ li {
     color: #fff;
     width: 100%;
 }
-.divh{
-    display: flex; 
-    flex-direction: row; 
-    margin-right: 10px;
-    margin-bottom: 25px;
-    
-}
 
+/* Estilos para los enlaces de la barra de navegación */
 .nav-links a {
     color: #CCCCCC;
 }
 
+/* Estilos para el logo en la barra de navegación */
 .logo {
     display: flex;
     align-self: center;
     width: 70px;
-    
 }
 
+/* Estilos para el menú de navegación */
 .menu {
     display: flex;
     font-size: 18px;
@@ -57,79 +56,28 @@ li {
     align-items: center;
 }
 
+/* Estilos para el botón de inicio de sesión */
 .sign:hover {
     background-color: #0078E5;
     transition: 0.3s ease;
 }
 
+/* Estilos para los elementos del menú */
 .menu li {
     position: relative;
     font-size: 9.5px;
 }
 
+/* Estilos para el texto "STORE" en la barra de navegación */
 .store {
     font-size: 1.5rem;
-  text-transform: uppercase;  
-  letter-spacing: 3px; 
-  text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
     color: #CCCCCC;
 }
 
-.dist {
-    padding-right: 30px;
-    padding-left: 20px;
-    padding-top: 8px;
-    font-size: 15px;
-    color: #CCCCCC;
-}
-
-.support {
-    padding-right: 25px;
-    padding-top: 8px;
-    font-size: 15px;
-    color: #CCCCCC;
-}
-
-.vl {
-    margin-top: 2px;
-    margin-left: 10px;
-    border-left: 0.5px solid #CCCCCC;
-    height: 30px;
-}
-
-.unreal-eng {
-    padding-left: 30px;
-    padding-top: 8px;
-    font-size: 13px;
-    color: #CCCCCC;
-}
-
-.sign {
-    position: absolute;
-    background-color: #0078F2;
-    font-size: 10.5px;
-    width: 127px;
-    height: 52px;
-    display: flex;
-    justify-content: center;
-}
-
-.menu li a {
-    color: white;
-}
-
-.sign-in {
-    padding-right: 25px;
-    padding-left: 10px;
-}
-.fa{
-    font-size:19px
-}
-.fas {
-    padding-left: 50px;
-    font-size:19px
-}
-
+/* Estilos para el contenedor de la barra de navegación secundaria */
 .nav {
     width: 100vw;
     display: flex;
@@ -142,6 +90,7 @@ li {
     width: 100%;
 }
 
+/* Estilos para el contenedor del campo de búsqueda */
 .input-container {
     position: relative;
     left: 10vw;
@@ -151,6 +100,7 @@ li {
     height: 40px;
 }
 
+/* Estilos para el icono de búsqueda */
 .nav i {
     position: relative;
     left: 25px;
@@ -165,6 +115,7 @@ li {
     align-items: center;
 }
 
+/* Estilos para el campo de búsqueda */
 .input {
     border-radius: 20px;
     border: none;
@@ -176,6 +127,7 @@ li {
     max-width: 16vw;
 }
 
+/* Estilos para los enlaces de la barra de navegación secundaria */
 .dsc {
     position: relative;
     display: flex;
@@ -184,6 +136,7 @@ li {
     color: #CCCCCC;
 }
 
+/* Estilos para el contenedor de los enlaces de la barra de navegación secundaria */
 .abc {
     position: relative;
     display: flex;
@@ -200,10 +153,7 @@ li {
     padding-left: 30px;
 }
 
-.dsc:hover {
-    color: #F5F5F5;
-}
-
+/* Estilos para el contenido principal */
 .content-c {
     display: flex;
     width: 75%;
@@ -212,6 +162,7 @@ li {
     gap: 0px;
 }
 
+/* Estilos para el carrusel de imágenes */
 .carousel {
     height: 100%;
     width: 79%;
@@ -219,12 +170,14 @@ li {
     overflow: hidden;
 }
 
+/* Estilos para el contenedor de imágenes del carrusel */
 .image-container {
     display: flex;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
 
+/* Estilos para las imágenes del carrusel */
 .image-container img {
     min-width: 100%;
     width: 100%;
@@ -232,6 +185,7 @@ li {
     object-fit: cover;
 }
 
+/* Estilos para el contenido lateral */
 .side-content {
     display: flex;
     color: #F5F5F5;
@@ -240,6 +194,7 @@ li {
     width: 20%;
 }
 
+/* Estilos para los componentes del contenido lateral */
 .side-component {
     display: inline-flex;
     border-radius: 15px;
@@ -248,39 +203,39 @@ li {
     height: 16%;
 }
 
-.side-component:hover {
-    background-color: #CCCCCC;
-    transition: all 0.3s ease;
-}
-
+/* Estilos para las imágenes de los componentes laterales */
 .side-component img {
     border-radius: 15px;
     width: 16%;
     margin: 2vh;
 }
 
+/* Estilos para las imágenes dentro del carrusel */
 .imgsi {
     min-width: 100%;
     height: 100%;
     position: relative;
 }
 
+/* Estilos para los elementos superpuestos en las imágenes del carrusel */
 .imgsin {
     display: flex;
     position: absolute;
     left: 6%;
     top: 10%;
     height: 30%;
-    top: 25%; 
+    top: 25%;
     height: 25%;
 }
 
+/* Estilos para las imágenes dentro de los elementos superpuestos */
 .imgsin img {
     object-fit: cover;
     min-width: 100%;
     height: 100%;
 }
 
+/* Estilos para la descripción superpuesta en las imágenes del carrusel */
 .imgsindsc {
     position: absolute;
     display: flex;
@@ -294,10 +249,7 @@ li {
     top: 55%;
 }
 
-.imgsindsc h1 {
-    font-size: 1rem;
-}
-
+/* Estilos para el precio y botón de compra superpuestos en las imágenes del carrusel */
 .imgsinprice {
     position: absolute;
     display: flex;
@@ -308,6 +260,7 @@ li {
     gap: 3vh;
 }
 
+/* Estilos para el botón de compra */
 .imgsinprice a {
     width: 80%;
     display: flex;
@@ -318,121 +271,27 @@ li {
     border-radius: 5px;
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 468px) {
-    .imgsindsc {
-        display: none;
-    }
-
-    .imgsindsc h1 {
-        display: none;
-        font-size: 0.2rem;
-    }
-
-    .unreal-eng {
-        display: none;
-    }
-
-    .side-content {
-        gap: 0px;
-    }
-
-    .side-component img {
-        border-radius: 20px;
-        width: 20%;
-        margin: 0.5vh;
-        font-size: 11px;
-    }
-
-    .content-c {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: auto auto;
-        font-size: 2px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .imgsindsc span {
-        font-size: 0.5rem;
-    }
-
-    .imgsindsc h1 {
-        font-size: 0.5rem;
-    }
-
-    .unreal-eng {
-        display: none;
-    }
-
-    .side-content {
-        gap: 0px;
-    }
-
-    .side-component img {
-        border-radius: 20px;
-        width: 20%;
-        margin: 0.5vh;
-        font-size: 11px;
-    }
-
-    .content-c {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: auto auto;
-        font-size: 2px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .imgsindsc span {
-        font-size: 0.7rem;
-    }
-
-    .imgsindsc h1 {
-        display: none;
-        font-size: 0.7rem;
-    }
-
-    .content-c {
-        font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .imgsindsc span {
-        font-size: 0.8rem;
-    }
-
-    .imgsindsc h1 {
-        display: none;
-        font-size: 0.8rem;
-    }
-
-    .content-c {
-        font-size: 8px;
-    }
-}
-
-footer{
+/* Estilos para el pie de página */
+footer {
     background-color: #202020;
     height: 100%;
-  }
-  .footer-1{
+}
+
+/* Estilos para la primera sección del pie de página */
+.footer-1 {
     font-size: 32px;
     color: #CCCCCC;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:1%;
-    
+    gap: 1%;
     width: 90vw;
     margin: 0 auto;
-  }
-  .footer-container{
-    padding-top:2% ;
+}
+
+/* Estilos para el contenedor del pie de página */
+.footer-container {
+    padding-top: 2%;
     font-size: 32px;
     color: #CCCCCC;
     margin: 0 auto;
@@ -440,112 +299,47 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .text-container{
+}
+
+/* Estilos para el contenedor de texto del pie de página */
+.text-container {
     width: 90vw;
-    color:#CCCCCC ;
+    color: #CCCCCC;
     margin: 0 auto;
-    padding-top:2% ;
-  }
-  .dsc-container{
+    padding-top: 2%;
+}
+
+/* Estilos para el contenedor de columnas en el pie de página */
+.dsc-container {
     display: flex;
     flex-direction: row;
     gap: 2%;
     padding-bottom: 2.5%;
-  
-    
-  }
-  .columnc{
+}
+
+/* Estilos para las columnas del pie de página */
+.columnc {
     font-size: 13px;
     color: #e7e7e7;
     display: flex;
     flex-direction: column;
-    
-  }
-  .columnc span{
+}
+
+/* Estilos para los elementos dentro de las columnas del pie de página */
+.columnc span {
     padding-bottom: 7%;
-  }
-  .rights{
+}
+
+/* Estilos para el texto de derechos de autor */
+.rights {
     padding-top: 3%;
     font-size: 11.36px;
     width: 45vw;
     line-height: 25px;
-  }
-  footer span:hover{
+}
+
+/* Estilos para los enlaces del pie de página al pasar el ratón */
+footer span:hover {
     color: #0078E5;
     transition: 0.1s ease;
-  }
-  .imgsi{
-   min-width: 100%;
-  height: 100%;
-    
-  
-    
-   
-    position: relative;
-  }
-  .imgsin{
-    display: flex;
-    position: absolute;
-    
-    left: 6%;
-    top: 10%;
-    
-  
-    height: 30%;
-  }
-  .imgsin img{
-    object-fit: cover;
-    min-width: 100%;
-    height: 100%;
-  }
-  .imgsindsc{
-   position: absolute;
-   display: flex;
-   flex-direction: column;
-   gap: 2vh;
-   top: 45%;
-   left: 5%;
-   color: #F5F5F5;
-   width: 35%;
-   font-size: 1.2rem;
-  
-  }
-  .imgsindsc h1{
-    font-size: 1rem;
-  }
-  .imgsinprice{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    bottom: 10%;
-    color: #F5F5F5;
-    left: 5%;
-    gap: 3vh;
-  
-  }
-  .imgsinprice a{
-    width:80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F5F5;
-    height: 7vh;
-    border-radius: 5px;
-    
-  }
-  .swipe-wrapper{
-    overflow: hidden;
-  }
-  .cos{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    width: 75vw;
-    margin: 0 auto;
-    padding-top: 2%;
-    gap: 2vh;
-    transition: 0.3s ease;
-  }
+}

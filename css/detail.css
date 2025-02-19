@@ -46,3 +46,69 @@ nav {
 .tab-link.active {
     border-bottom: 3px solid #ffc107;
 }
+.achievements-section {
+    padding: 40px 0;
+  }
+  .achievements-section h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .achievement-card {
+    background-color: #1c1f25; /* Color de fondo de la card (opcional) */
+    border: none;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  .achievement-card:hover {
+    transform: scale(1.05);
+  }
+  .achievement-card img {
+    width: 80px;   /* Ajusta según tu preferencia */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+  .achievement-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .achievement-card-exp {
+    font-size: 0.9rem;
+    color: #cfcfcf; /* Un gris claro para diferenciar */
+  }
+  .requirements-section {
+    padding: 40px 0;
+  }
+  .requirements-section h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .requirements-section h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .requirements-section h3 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .req-box {
+    background-color: #1c1f25; /* Un color gris oscuro para el recuadro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .req-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .req-box ul li {
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: #cfcfcf; /* Un gris claro para subtítulos o textos complementarios */
+    font-size: 0.95rem;
+  }

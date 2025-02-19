@@ -217,7 +217,12 @@ li {
   margin: 0 auto;
   gap: 0px;
 }
-
+.ac{
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  background: #b9b9b9 !important;
+  color: #121212;
+}
 .carousel {
   height: 100%;
   width: 79%;

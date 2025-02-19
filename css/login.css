@@ -45,3 +45,209 @@ body {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  /* Estilos del header */
+  
+   /* Estilo para la línea separadora */
+   .separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px 0; 
+    border: none; 
+   }
+  
+  /* Estilo para los enlaces */
+  .dropdown-menu li a {
+    padding: 10px 15px; 
+    display: block; 
+    
+  }
+  .navbar {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-color: #2A2A2A;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    color: #CCCCCC;
+  }
+  
+  .logo {
+    width: 30px;
+  }
+  
+  .menu {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign:hover {
+    background-color: #0078E5;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    position: relative;
+    font-size: 9.5px;
+  }
+  
+  .store {
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 8px;
+    font-size: 11.5px;
+    color: #CCCCCC;
+  }
+  
+  .dist {
+    padding-right: 30px;
+    padding-top: 8px;
+    font-size: 11.5px;
+    color: #CCCCCC;
+  }
+  
+  .support {
+    padding-right: 25px;
+    padding-top: 8px;
+    font-size: 11.5px;
+    color: #CCCCCC;
+  }
+  
+  .vl {
+    margin-top: 2px;
+    margin-left: 10px;
+    border-left: 0.5px solid #CCCCCC;
+    height: 30px;
+  }
+  
+  .unreal-eng {
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 12px;
+    color: #CCCCCC;
+  }
+  
+  .sign {
+    position: absolute;
+    background-color: #0078F2;
+    font-size: 10.5px;
+    width: 127px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li a {
+    color: white;
+  }
+  
+  .sign-in {
+    padding-right: 25px;
+    padding-left: 10px;
+  }
+  
+  .fas {
+    padding-left: 50px;
+  }
+  
+  .nav {
+    width: 100vw;
+    display: flex;
+    background-color: #121212;
+    height: 5%;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .input-container {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    height: 40px;
+  }
+  
+  .nav i {
+    position: relative;
+    left: 25px;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 12.75px;
+    font-weight: 12.75;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .input {
+    border-radius: 20px;
+    border: none;
+    padding-left: 40px;
+    background-color: #202020;
+    color: #CCCCCC;
+    outline: none;
+    min-width: 14vw;
+    max-width: 16vw;
+  }
+  
+  .dsc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    color: #CCCCCC;
+  }
+  
+  .v {
+    display: flex;
+    margin-left: 5px;
+  }
+  
+  .abc {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 13.5vw;
+    margin: 30px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    width: 59.08px;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+  
+  .abc.v.active {
+    color: #0078F2;
+    background-color: aliceblue;
+  }
+  
+  .dsc:hover {
+    color: #F5F5F5;
+  }
+  

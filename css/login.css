@@ -330,16 +330,3 @@ footer span:hover {
   display: flex;
   gap: 2%;
 }
-
-/* Media queries */
-@media screen and (max-width: 468px) {
-  .unreal-eng {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .unreal-eng {
-    display: none;
-  }
-}

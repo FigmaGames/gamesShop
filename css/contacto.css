@@ -1,0 +1,40 @@
+body {
+    background-color: #0a192f;
+    color: #ffffff;
+}
+.card {
+    background-color: #1f2937;
+    border: none;
+}
+.btn-primary {
+    background-color: #2d3748;
+    border: none;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.btn-primary:hover {
+    background-color: #4a5568;
+}
+.form-control {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    color: #ffffff;
+}
+.form-control:focus {
+    background-color: #2d3748;
+    border-color: #667eea;
+    color: #ffffff;
+}
+.faq-item {
+    cursor: pointer;
+    color: #667eea;
+}
+.chatbot-box {
+    background-color: #2d3748;
+    padding: 10px;
+    border-radius: 5px;
+}
+.buttonc{
+    padding: 13px;
+}

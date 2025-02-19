@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 li {
@@ -469,6 +469,7 @@ li {
 .Games {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap ;
   width: 75vw;
   margin: 0 auto;
   gap: 2%;
@@ -479,7 +480,7 @@ li {
 }
 
 .top-games {
-  width: 32%;
+  width: 30%;
   font-size: 12px;
   height: 100%;
 }
@@ -740,4 +741,29 @@ footer span:hover {
   .top-games h2 a {
       font-size: 12px;
   }
+}
+@media screen and (max-width: 1000px) {
+  .Games{
+    flex-direction: column;
+    align-items: center;
+  }
+  .kl{
+    transform: rotate(90deg);
+    height: 120px;
+  }
+  .sdsc{
+    font-size: 10px;
+  }
+  .sprice{
+    font-size: 11px;
+  }
+  .input-container{
+    left: 0vw;
+  }
+  .descrip{
+    display: none;
+  }
+}
+.descrip{
+  font-size: 15px;
 }

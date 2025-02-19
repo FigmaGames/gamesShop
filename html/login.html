@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login Accesible</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4">
+            <h1 class="text-center mb-4">Iniciar Sesión</h1> <!-- Usar h1 para el título principal -->
+            <form role="form" aria-labelledby="loginHeading">
+                <div class="form-group">
+                    <label for="email" id="emailLabel">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico"
+                           aria-labelledby="emailLabel" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted sr-only">Ingresa tu dirección de correo electrónico registrada.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password" id="passwordLabel">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña"
+                           aria-labelledby="passwordLabel" aria-describedby="passwordHelp">
+                    <small id="passwordHelp" class="form-text text-muted sr-only">Ingresa tu contraseña segura.</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" aria-label="Iniciar sesión">Iniciar Sesión</button>
+            </form>
+            <hr>
+            <p class="text-center">O inicia sesión con:</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-google mx-2" aria-label="Iniciar sesión con Google">
+                    <span class="sr-only">Iniciar sesión con Google</span>
+                    Google
+                </a>
+                <a href="#" class="btn btn-facebook mx-2" aria-label="Iniciar sesión con Facebook">
+                    <span class="sr-only">Iniciar sesión con Facebook</span>
+                    Facebook
+                </a>
+                <a href="#" class="btn btn-github mx-2" aria-label="Iniciar sesión con GitHub">
+                    <span class="sr-only">Iniciar sesión con GitHub</span>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

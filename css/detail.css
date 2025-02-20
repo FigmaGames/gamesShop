@@ -11,6 +11,7 @@
 
 body {
     background-color: var(--background-color);
+    color: white !important;
 }
 
 nav {

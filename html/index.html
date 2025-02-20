@@ -6,43 +6,47 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>FigmaGamer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../resources/images/logorecortado.png" >
+    <link rel="shortcut icon" href="../resources/images/logorecortado.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://static-assets-prod.epicgames.com/epic-store/static/webpack/webAppStyles.egstore-site.76e941f28c6ca274daa0.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-
-
-  <!-- QUITAR LOS STYLES Y HACER QUE TODO VALIDE Y PASAR A REM O VH Y EL ROLLO DE LOS COLORES GLOBALES -->
-
-
-
   <header>
-    <div class="navbar ">
-        <div class="divh">
-        <img class="logo"  src="../resources/images/logorecortado.png" alt="">
-        <div class="store" >STORE</div>
-        <div class="dist"><a class="nav-link dropdown-toggle dist" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Distribuir
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Foro</a></li>
-          <li><a class="dropdown-item" href="#">Información</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../resources/images/logorecortado.png" alt="Epic Games Logo" height="30" class="d-inline-block align-top">
+              STORE
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Asistencia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Distribuir
+                      </a>
+                      <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-light " href="#">Foro Comunidad</a></li>
+                          <li class="separator"></li>
+                          <li><a class="dropdown-item text-light" href="#">Contacto</a></li>
+                          <li class="separator"></li>
+                          <li><a class="dropdown-item text-light" href="#">Informacion legar de uso</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <span class="text-white me-3 fs-5"><i class="bi bi-cart"></i></span>
+                  <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                  <button class="btn btn-secondary">Registrate!</button>
+              </div>
+          </div>
       </div>
-        <div class="support">AYUDA</div>
-        <div class="vl"></div>
-        <div class="unreal-eng">UNREAL ENGINE</div>
-        </div>
-        <ul class="nav-links">
-          <div class="menu">
-            <i class="fa">&#xf0ac;</i>
-            <i class='fas'>&#xf4ff;</i>
-            <li class="sign-in"><a href="#">INICIAR SESION</a></li>   
-            <li class="sign"><a href="#">DESCARGAR</a></li>
-            </div>
-         </ul>
-     </div>
+  </nav>
     <div class="nav">
       <div class="input-container">
         <i class="fa fa-search"></i>
@@ -56,129 +60,376 @@
       </div>
     </header>
     
-    <article>
- <div class="content-c">
-  <div class="carousel">
-    <div class="image-container" id="imgs">
-      <div class="imgsi">
-        <img src="../resources/images/egs-remnant-2-carousel-desktop-1920x1080-972d10451ff2.avif"
-       alt="first-image"
-       />
-        <div class="imgsin">
-          <img src="../resources/images/egs-remnant-2-carousel-logo-350x289-1995138bba72.png" alt="">
-        </div>
-        <div class="imgsindsc">
-          <h1>NOW AVAILABLE</h1>
-          <span>Explore the depths of the unknown to stop an envil from destroying reality itself.</span>
-        </div>
-        <div class="imgsinprice">
-          <span>Starting at TRY 685.00</span>
-          <a href="/">BUY NOW</a>
-        </div>
+    <article class="mt-5">
+      <div class="content-c">
+       <div class="carousel">
+         <div class="image-container" id="imgs">
+           <div class="imgsi">
+             <img src="../resources/images/egs-remnant-2-carousel-desktop-1920x1080-972d10451ff2.avif" alt="first-image"/>
+             <div class="imgsin">
+               <img src="../resources/images/egs-remnant-2-carousel-logo-350x289-1995138bba72.png" alt="remmnant">
+             </div>
+             <div class="imgsindsc">
+               <h1>YA DISPONIBLE</h1>
+               <span class="descrip">Explora las profundidades de lo desconocido para evitar que un diablo destruya la realidad misma.</span>
+             </div>
+             <div class="imgsinprice">
+               <span>59.99€</span>
+               <a class="ac" href=#>COMPRAR</a>
+             </div>
+             </div>
+             <div class="imgsi">
+               <img src="../resources/images/en-dotw-wk2-desktop-carousel-asset-1920x1080-eec4856fd4a9.avif" alt="first-image"/>
+               <div class="imgsin">
+                 <img src="../resources/images/en-dotw-carousel-logo-350x206-a28ffa01e132.png" alt="deals of thw week">
+               </div>
+               <div class="imgsindsc">
+                 <h1>OFERTAS TODOS LOS MARTES</h1>
+                 <span>¡Ofertas semanales! No te lo pierdas.</span>
+               </div>
+               </div>
+               <div class="imgsi">
+                 <img src="../resources/images/egs-fc24-ultimate-carousel-desktop-1920x1080-24ba0952c33e.avif" alt="first-image"/>
+                 <div class="imgsin">
+                   <img src="../resources/images/egs-fc24-ultimate-carousel-logo-350x261-778d03f6f36d.png" alt="fifa2024">
+                 </div>
+                 <div class="imgsindsc imgsindsc-custom-1">
+                   <h1>DISPONIBLE EL 29 DE SEPTIEMBRE</h1>
+                   <span class="descrip">Compra por adelantado la Ultimate Edition antes del 22 de agosto para obtener un jugador de la UCL o la UWCL.</span>
+                 </div>
+                 <div class="imgsinprice">
+                   <span>64.95€</span>
+                   <a class="ac" href=#>COMPRAR</a>
+                 </div>
+                 </div>
+                 <div class="imgsi">
+                   <img src="../resources/images/desktop-image-1248x702-1248x702-cf8b044c82ea.avif" alt="first-image"/>
+                   <div class="imgsin imgsin-custom-1">
+                     <img src="../resources/images/genshin-impact-logo-en-v2-350x139-101962c8032b.png" alt="genshin">
+                   </div>
+                   <div class="imgsindsc imgsindsc-custom-2">
+                     <h1>VERSIÓN 4.0 YA DISPONIBLE</h1>
+                     <span class="descrip">¡La versión 4.0 presenta la Nación de la Justicia y una impresionante exploración submarina con Lyney, Lynette y Freminet!</span>
+                   </div>
+                   <div class="imgsinprice">
+                     <span>79.99€</span>
+                     <a class="ac" href=#>COMPRAR</a>
+                   </div>
+                   </div>
+                   <div class="imgsi">
+                     <img src="../resources/images/egs-the-expanse-carousel-desktop-1920x1080-79d992de553e.avif" alt="first-image"/>
+                     <div class="imgsin imgsin-custom-2">
+                       <img src="../resources/images/egs-the-expanse-carousel-logo-350x67-ff300c37a78d.png" alt="the expanse">
+                     </div>
+                     <div class="imgsindsc imgsindsc-custom-3">
+                       <h1>EPISODIO 1 - YA DISPONIBLE</h1>
+                       <span class="descrip">Desde buscar barcos hundidos hasta luchar contra piratas, experimenta el universo de The Expanse como nunca antes.</span>
+                     </div>
+                     <div class="imgsinprice imgsinprice-custom-1">
+                       <span>49.99€</span>
+                       <a class="ac" href=#>COMPRAR</a>
+                     </div>
+                     </div>
+                     <div class="imgsi">
+                       <img src="../resources/images/egs-alan-wake-2-carousel-desktop-1248x702-355ef4f0ddf5.avif" alt="first-image"/>
+                       <div class="imgsin imgsin-custom-3">
+                         <img src="../resources/images/egs-alan-wake-2-carousel-logo-350x100-25d89157f21e.png" alt="alan wake2">
+                       </div>
+                       <div class="imgsindsc imgsindsc-custom-4">
+                         <h1>MUY PRONTO</h1>
+                         <span class="descrip">Una serie de asesinatos rituales amenazan a Bright Falls en el nuevo horror de supervivencia psicoligal de Remedy.</span>
+                       </div>
+                       <div class="imgsinprice imgsinprice-custom-2">
+                         <span>59.99€</span>
+                         <a class="ac" href=#>COMPRAR</a>
+                       </div>
+                       </div>
+         </div> 
+       </div>
         
+          <div class="side-content">
+         <div class="side-component">
+             <img src="../resources/images/egs-quakecon-2023-carousel-thumb-1200x1600-9cf96818e471.avif" alt="quakcon">
+             <p class="ph">Remmnant 2</p>
+         </div>
+         <div class="side-component">
+             <img src="../resources/images/en-dotw-carousel-thumbnail-wk2-1200x1600-d33ff8e5911c.avif" alt="deals of the week">
+             <p class="ph">The Expanse-A Telltale</p>
+         </div>     
+            <div class="side-component">
+             <img src="../resources/images/egs-fc24-ultimate-carousel-thumb-1200x1600-deff2ea75f68.webp" alt="fifa2024">
+             <p class="ph">Fifa 2024</p>
+         </div>      
+         <div class="side-component">
+             <img src="../resources/images/en-egs-genshin-4-0-carousel-thumb-1200x1600-03ca40dca1bd.avif" alt="genshin">
+             <p class="ph">Genshin Impact</p>
+         </div>      
+         <div class="side-component">
+             <img src="../resources/images/egs-the-expanse-carousel-thumb-1200x1600-df3b64022ca0.webp" alt="the expanse">
+             <p class="ph">The expanse</p>
+         </div>      
+         <div class="side-component">
+             <img src="../resources/images/egs-alan-wake-2-carousel-thumb-1200x1600-1d7fdbdf2a3b.avif" alt="alan wake 2">
+             <p class="ph">Alan Wake II</p>
+           </div>
+         </div>
+       </div>  
+     </article>
+
+<article>
+     <div class="AllQuake">
+      <div class="QuakeCon">
+        <h2><a href=#>Juegos más esperados</a></h2>
+        <div class="Qlist1">
+          <button id="left" class="Qlist"><span>⭠</span></button>
+          <button id="right" class="Qlist"><span>⭢</span></button>
         </div>
-        <div class="imgsi">
-          <img src="../resources/images/en-dotw-wk2-desktop-carousel-asset-1920x1080-eec4856fd4a9.avif" alt="first-image"/>
-          <div class="imgsin">
-            <img src="../resources/images/en-dotw-carousel-logo-350x206-a28ffa01e132.png" alt="">
-          </div>
-          <div class="imgsindsc">
-            <h1>HOT OFFERS EVERY TUESDAY</h1>
-            <span>Unmissable weekly deals! Don't miss out.</span>
-          </div>
-          </div>
-          <div class="imgsi">
-            <img src="../resources/images/egs-fc24-ultimate-carousel-desktop-1920x1080-24ba0952c33e.avif" alt="first-image"/>
-            <div class="imgsin">
-              <img src="../resources/images/egs-fc24-ultimate-carousel-logo-350x261-778d03f6f36d.png" alt="">
-            </div>
-            <div class="imgsindsc" style="left: 5%; top: 50%;  ">
-              <h1>AVAILABLE SEPTEMBER 29</h1>
-              <span>Pre-purchase the Ultimate Edition by 22 Aug for a UCL or UWCL Hero.</span>
-            </div>
-            <div class="imgsinprice">
-              <span>Starting at TRY 685.00</span>
-              <a href="/">BUY NOW</a>
-            </div>
-            </div>
-            <div class="imgsi">
-              <img src="../resources/images/desktop-image-1248x702-1248x702-cf8b044c82ea.avif" alt="first-image"/>
-              <div class="imgsin" style="height: 17%; top: 15%;">
-                <img src="../resources/images/genshin-impact-logo-en-v2-350x139-101962c8032b.png" alt="">
-              </div>
-              <div class="imgsindsc" style="left: 5%; top: 40%; width: 40%;  ">
-                <h1>VERSION 4.0 NOW AVAILABLE</h1>
-                <span>Version 4.0 introduces the Nation of Justice and breathtaking underwater exploration with Lyney, Lynette and Freminet!</span>
-              </div>
-              <div class="imgsinprice">
-                <span>Starting at TRY 685.00</span>
-                <a href="/">BUY NOW</a>
-              </div>
-              </div>
-              <div class="imgsi">
-                <img src="../resources/images/egs-the-expanse-carousel-desktop-1920x1080-79d992de553e.avif"
-               alt="first-image"
-               />
-                <div class="imgsin " style="height: 8%; top: 30%;">
-                  <img src="../resources/images/egs-the-expanse-carousel-logo-350x67-ff300c37a78d.png" alt="">
-                </div>
-                <div class="imgsindsc" style="left: 5%; top: 45%; width: 40%;  ">
-                  <h1>EPISODE 1 - OUT NOW</h1>
-                  <span>From scavenging wrecked ships to combating pirates, experiencte the universe of The Expanse like never before</span>
-                </div>
-                <div class="imgsinprice" style="bottom: 5%;">
-                  <span>Starting at TRY 685.00</span>
-                  <a href="/">BUY NOW</a>
-                </div>
-                </div>
-                <div class="imgsi">
-                  <img src="../resources/images/egs-alan-wake-2-carousel-desktop-1248x702-355ef4f0ddf5.avif"
-                 alt="first-image"
-                 />
-                  <div class="imgsin" style="height: 12%; top: 25%;">
-                    <img src="../resources/images/egs-alan-wake-2-carousel-logo-350x100-25d89157f21e.png" alt="">
-                  </div>
-                  <div class="imgsindsc" style="left: 5%; top: 45%; width: 40%;  ">
-                    <h1>COMING SOON</h1>
-                    <span>A string of ritualistic murders threatens Bright Falls in the newest psycholigal survival horror from Remedy.</span>
-                  </div>
-                  <div class="imgsinprice " style="bottom: 5%;">
-                    <span>Starting at TRY 685.00</span>
-                    <a href="/">BUY NOW</a>
-                  </div>
-                  </div>
-      
-    </div> 
-  </div>
-   
-     <div class="side-content">
-    <div class="side-component">
-        <img src="../resources/images/egs-quakecon-2023-carousel-thumb-1200x1600-9cf96818e471.avif" alt="">
-        <p>Remmnant 2</p>
+      </div>
+      <div class="swipe-wrapper ">
+        <div class="cos" id="quake">
+        <a class="swipe-content" href="">
+        <img src="../resources/images/EGS_DEATHLOOPGhostwireTokyoBundle_ArkaneStudiosTangoGameworks_S2_1200x1600-c56438502662609a7fdb453ec38f3343.avif" alt="deathloop">
+        <span class="stitle">BUNDLE</span>
+        <span class="sdsc">DEATHLOOP + Ghostwire: Tokyo Bundle</span>
+        <span class="sprice">49,99€</span>
+        </a>
+        <a class="swipe-content" href="">
+          <img src="../resources/images/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S2_1200x1600-acb1abddb047a40709f270fa623f1f02.avif" alt="dishonored">
+          <span class="stitle">BASE GAME</span>
+          <span class="sdsc">Dishonored®: Death of the Outsider™</span>
+          <span class="sprice">19,99€</span>
+          </a>
+        <a class="swipe-content" href="">
+            <img src="../resources/images/EGS_Dishonored2_ArkaneStudios_S2_1200x1600-96a53bbf6b94c5c93e568faebeffeb69(1).avif" alt="dishored2">
+            <span class="stitle">BASE GAME</span>
+            <span class="sdsc">Dishonored 2</span>
+            <span class="sprice">9,99€</span>
+        </a>
+        <a class="swipe-content" href="">
+              <img src="../resources/images/EGS_FalloutNewVegasUltimateEdition_ObsidianEntertainment_Editions_S2_1200x1600-45b1c7c6093bfc78539a8faeead2c929.avif" alt="fallaut">
+              <span class="stitle">EDITION</span>
+              <span class="sdsc">Fallout: New Vegas - Ultimate Edition</span>
+              <span class="sprice">24,99€</span>
+        </a>
+         <a class="swipe-content" href="">
+                <img src="../resources/images/EGS_HiFiRUSHDeluxeEdition_TangoGameworks_Editions_S2_1200x1600-565af0d97a44124b1322218b5901da48.avif" alt="hi fi">
+                <span class="stitle">EDITION</span>
+                <span class="sdsc">Hi-Fi RUSH Deluxe Edition</span>
+                <span class="sprice">79,99€</span>
+          </a>
+          <a class="swipe-content" href="">
+            <img src="../resources/images/EGS_DEATHLOOPGhostwireTokyoBundle_ArkaneStudiosTangoGameworks_S2_1200x1600-c56438502662609a7fdb453ec38f3343.avif" alt="deathloop">
+            <span class="stitle">BUNDLE</span>
+            <span class="sdsc">DEATHLOOP + Ghostwire: Tokyo Bundle</span>
+            <span class="sprice">27,95€</span>
+            </a>
+            <a class="swipe-content" href="">
+              <img src="../resources/images/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S2_1200x1600-acb1abddb047a40709f270fa623f1f02.avif" alt="dishonored">
+              <span class="stitle">BASE GAME</span>
+              <span class="sdsc">Dishonored®: Death of the Outsider™</span>
+              <span class="sprice">29,99€</span>
+              </a>
+              <a class="swipe-content" href="">
+                <img src="../resources/images/EGS_Dishonored2_ArkaneStudios_S2_1200x1600-96a53bbf6b94c5c93e568faebeffeb69(1).avif" alt="dishonored2">
+                <span class="stitle">BASE GAME</span>
+                <span class="sdsc">Dishonored 2</span>
+                <span class="sprice">54,99€</span>
+            </a>
+            <a class="swipe-content" href="">
+                  <img src="../resources/images/EGS_FalloutNewVegasUltimateEdition_ObsidianEntertainment_Editions_S2_1200x1600-45b1c7c6093bfc78539a8faeead2c929.avif" alt="fallout">
+                  <span class="stitle">EDITION</span>
+                  <span class="sdsc">Fallout: New Vegas - Ultimate Edition</span>
+                  <span class="sprice">59,99€</span>
+            </a>
+             <a class="swipe-content" href="">
+                    <img src="../resources/images/EGS_HiFiRUSHDeluxeEdition_TangoGameworks_Editions_S2_1200x1600-565af0d97a44124b1322218b5901da48.avif" alt="hifi">
+                    <span class="stitle">EDITION</span>
+                    <span class="sdsc">Hi-Fi RUSH Deluxe Edition</span>
+                    <span class="sprice">79,99€</span>
+              </a>
+      </div>
+      </div>
+      </div>
+    </article>
+
+<article>
+     <div class="freegames-container ">
+      <div class="freegames">
+        <div class="freegames-title">
+        <i class="fa fa-gift"></i>
+        <h2><a href=#>Juegos Gratis</a></h2>
+      </div>
+      <div class="freegames1">
+          <a href="#" class="freegames-btn">Ver más</a>
+      </div>
+      </div>
+      <div class="freegamesthumb">
+        <a class="freegamesthumb-content" href="">
+        <img src="../resources/images/EGS_DEATHLOOPGhostwireTokyoBundle_ArkaneStudiosTangoGameworks_S2_1200x1600-c56438502662609a7fdb453ec38f3343.avif" alt="deathloop">
+        <span class="stitle">BUNDLE</span>
+        <span class="sdsc">DEATHLOOP + Ghostwire: Tokyo Bundle</span>
+        <span class="stitle">Free Now - Aug 10 at 06:00 PM</span>
+        </a>
+        <a class="freegamesthumb-content" href="">
+          <img src="../resources/images/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S2_1200x1600-acb1abddb047a40709f270fa623f1f02.avif" alt="dishonored">
+          <span class="stitle">BASE GAME</span>
+          <span class="sdsc">Dishonored®: Death of the Outsider™</span>
+          <span class="stitle">Free Now - Aug 10 at 06:00 PM</span>
+          </a>
+        <a class="freegamesthumb-content" href="">
+            <img src="../resources/images/EGS_EuropaUniversalisIV_ParadoxDevelopmentStudioParadoxTinto_S4_1200x1600-381fe4bad2c0951566b465ab1a46726d.avif" alt="europa4">
+            <span class="stitle">BASE GAME</span>
+            <span class="sdsc">Europa IV</span>
+            <span class="stitle">Free Now - Aug 10 at 06:00 PM</span>
+        </a>
+        <a class="freegamesthumb-content" href="">
+              <img src="../resources/images/EGS_OrwellKeepinganEyeonYou_OsmoticStudios_S2_1200x1600-4e40d306f86fd5991b39b1aa200b9f74.avif" alt="Keeping an eyeon you">
+              <span class="stitle">EDITION</span>
+              <span class="sdsc">Keeping An Eyeon You</span>
+              <span class="stitle">Free Now - Aug 10 at 06:00 PM</span>
+        </a>
     </div>
-    <div class="side-component">
-        <img src="../resources/images/en-dotw-carousel-thumbnail-wk2-1200x1600-d33ff8e5911c.avif" alt="">
-        <p>The Expanse-A Telltale</p>
-    </div>     
-       <div class="side-component">
-        <img src="../resources/images/egs-fc24-ultimate-carousel-thumb-1200x1600-deff2ea75f68.webp" alt="">
-        <p>The Evil Within 2</p>
-    </div>      
-    <div class="side-component">
-        <img src="../resources/images/en-egs-genshin-4-0-carousel-thumb-1200x1600-03ca40dca1bd.avif" alt="">
-        <p>EA SPORTS FC</p>
-    </div>      
-    <div class="side-component">
-        <img src="../resources/images/egs-the-expanse-carousel-thumb-1200x1600-df3b64022ca0.webp" alt="">
-        <p>Dead Island 2</p>
-    </div>      
-    <div class="side-component">
-        <img src="../resources/images/egs-alan-wake-2-carousel-thumb-1200x1600-1d7fdbdf2a3b.avif" alt="">
-        <p>Witchfire</p>
+    </div>
+  </article>
+
+  <div class="games-container">
+    <div class="Games ">
+      <div class="top-games">
+        <div class="game">
+          <h2><a href=# class="sdsc">Top Ventas</a></h2>
+          <div class="">
+            <a class="gbutton" href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="games">
+          <img src="../resources/images/ACKINGDOMPREORDER_STANDARDEDITION_EPIC_Key_Art_Portrait_640x854-640x854-288120c5573756cb988b6c1968cebd86.avif" alt="assasins creed valhalla">
+         <div class="games-dsc">
+           <span>Assassin's Creed® Valhalla</span>
+           <span>49,99€</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/GTAV_EGS_Artwork_1200x1600_PortraitStoreBanner-1200x1600-382243057711adf80322ed2aeea42191.avif" alt="gta5">
+         <div class="games-dsc">
+           <span>Grand Theft Auto V: Premium</span>
+           <span>29,99€</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/egs-remnant-2-carousel-thumb-1200x1600-ba81408e8583.avif" alt="Remnant">
+         <div class="games-dsc">
+           <span>Remnant 2</span>
+           <span>59,99€</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/EGS_DeadbyDaylight_BehaviourInteractive_S2_1200x1600-a1c30209e3b9fb63144daa9b5670f503.avif" alt="deadbylight">
+         <div class="games-dsc">
+           <span>Dead by Daylight</span>
+           <span>39,99€</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/EGS_DeadIsland2_DeepSilverDambusterStudios_S2_1200x1600-efc5201842cf642eb45f73227cd0789b.avif" alt="dead island2">
+         <div class="games-dsc">
+           <span>Dead Island 2</span>
+           <span>69,99€</span>
+          </div>
+         </div> 
+      </div>
+      <div class="kl"></div>
+      
+        <div class="top-games">
+          <div class="game">
+            <h2><a href=# class="sdsc">Más jugados</a></h2>
+            <div class="">
+              <a class="gbutton" href="#">Ver más</a>
+            </div>
+          </div>
+          <div class="games">
+            <img src="../resources/images/egs-fn-jujustu-kaisen-carousel-thumb-1200x1600-e07eeaa8c36f.avif" alt="fortnite">
+           <div class="games-dsc">
+             <span>Fortnite</span>
+             <span>Gratis</span>
+            </div>
+           </div> 
+           <div class="games">
+            <img src="../resources/images/EGS_RocketLeague_PsyonixLLC_S2_1200x1600-edcc4af1ea991205eb2346c6691cc99c.avif" alt="rocket league">
+           <div class="games-dsc">
+             <span>Rocket League</span>
+             <span>Gratis</span>
+            </div>
+           </div> 
+           <div class="games">
+            <img src="../resources/images/GTAV_EGS_Artwork_1200x1600_PortraitStoreBanner-1200x1600-382243057711adf80322ed2aeea42191.avif" alt="gta5">
+           <div class="games-dsc">
+             <span>Grand Theft Auto V: Premium</span>
+             <span>29,99€</span>
+            </div>
+           </div> 
+           <div class="games">
+            <img src="../resources/images/download-bloons-td-6-offer-100fo.avif" alt="blloonstd">
+           <div class="games-dsc">
+             <span>Bloons TD 6</span>
+             <span>Gratis</span>
+            </div>
+           </div> 
+           <div class="games">
+            <img src="../resources/images/EGS_VALORANT_RiotGames_S2_1200x1600-b911781672bac23a556586fb92c42983.avif" alt="valorant">
+           <div class="games-dsc">
+             <span>Valorant</span>
+             <span>Gratis</span>
+            </div>
+           </div> 
+          </div>
+     
+          <div class="kl"></div>
+      
+        <div class="top-games">
+        <div class="game">
+        <h2><a href=# class="sdsc">Lista de deseos</a></h2>
+          <div class="">
+              <a class="gbutton" href="#">Ver más</a>
+         </div>
+        </div>
+        <div class="games">
+          <img src="../resources/images/the-lord-of-the-rings-return-to-moria-tr0c9.avif" alt="lord of rings">
+         <div class="games-dsc">
+           <span> The Lord of The Rings Return to</span>
+           <span>Available 2023</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/witchfire-obly4.avif" alt="witchfire">
+         <div class="games-dsc">
+           <span>Witchfire</span>
+           <span>Available 09/20/23</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/Tall_1200x1600-9683c180c4902dccfd2d15af2bbe37c0.webp" alt="cycle">
+         <div class="games-dsc">
+           <span>The Cycle: Frontier</span>
+           <span>Coming Soon</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/EGS_Homeworld3_BlackbirdInteractive_S2_1200x1600-2080e2e3662c285b1c9efcb13f3a8d07.avif" alt="homeworld">
+         <div class="games-dsc">
+           <span>Homeworld 3</span>
+           <span>Available Feb 2024</span>
+          </div>
+         </div> 
+         <div class="games">
+          <img src="../resources/images/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa.avif" alt="alan wake2">
+         <div class="games-dsc">
+           <span>Alan Wake 2</span>
+           <span>Coming Soon</span>
+          </div>
+         </div> 
       </div>
     </div>
-  </div>  
-</article>
+  </div>
 
 <footer>
   <div class="footer-container">
@@ -186,20 +437,19 @@
   <i class="fa fa-facebook-f"></i>
   <i class="fa fa-twitter"></i>
   <i class="fa fa-youtube-play"></i>
-  
  </div>
  <div class="footer-2">
-  <i  style="cursor: pointer;" onclick="topFunction()" id="myBtn" class="fa fa-caret-square-o-up"></i>
+  <i onclick="topFunction()" id="myBtn" class="fa fa-caret-square-o-up"></i>
 </div>
 </div>
 <div class="text-container">
-  <div style="color: #cccc; padding-bottom: 1%; font-size: 13px;">
-   <p>Resources</p>
+  <div class="footer-text">
+   <p>Recursos</p>
   </div>
   <div class="dsc-container">
     <div class="columnc">
      <span>Support-A-Creator</span>
-     <span>Distribute on Epic Games</span>
+     <span>Distribute on Figma Games</span>
      <span>Careers</span>
      <span>Company</span>
     </div>
@@ -211,48 +461,44 @@
     <div class="columnc">
       <span>Online Services</span>
       <span>Community Rules</span>
-      <span>Epic Newsroom</span>
+      <span>FigmaGames Newsroom</span>
     </div>
   </div>
   
-  <div style="color: #cccc; padding-bottom: 1%; font-size: 13px;">
-   <p>Made By Epic Games</p>
+  <div class="footer-text">
+   <p>Made By Figma Games</p>
   </div>
-  <div class="dsc-container" style="padding-bottom: 0.7%;">
+  <div class="dsc-container footer-made-by">
     <div class="columnc">
      <span>Battle Breakers</span>
-     <span>Fortnite</span>
+     <span>FigmaGamer</span>
      <span>Infinity Blade</span>
     </div>
     <div class="columnc">
       <span>Robo Recall</span>
       <span>Shadow Complex</span>
-      <span>Unreal Tournament</span>
+      <span>Figmareal Tournament</span>
     </div>
   </div>
-  <hr style="border-color: rgb(63, 63, 63);">
+  <hr class="footer-hr">
   <div class="rights">
-    <p>© 2023, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners.   </p>
+    <p>© 2025, Figma Games, Inc. Todos los derechos reservados. FigmaGamer, Figma Games, el logotipo de Figma Games, son marcas comerciales o marcas registradas de Figma Games, Inc. en España y en otros lugares. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios Adri y Fer.</p>
   </div>
-  <div class="footer-container" style="font-size: 12px; padding-top: 3%;">
-    <div class="footer-1" style="font-size: 12px;">
-     <span>Terms of Service</span>
-     <span>Privacy Policy</span>
-     <span>Store Refund Policy</span>
-     
+  <div class="footer-container footer-bottom">
+    <div class="footer-1 footer-bottom-links">
+     <span class="fs-6">Terms of Service</span>
+     <span class="fs-6">Privacy Policy</span>
+     <span class="fs-6">Store Refund Policy</span>
     </div>
-    <div class="footer-2" style="display: flex; flex-direction: row; gap: 30%; padding-bottom: 3%; ">
-      
-      <i  style="font-size: 32px;" title="Epic Games" class="text-color-nonactive eg-footer-icon-eg"></i>
-      <i style="font-size: 32px;" title="Unreal Engine" class="text-color-nonactive eg-footer-icon-ue"></i>
-      
+    <div class="footer-2 footer-bottom-icons">
+      <i title="Epic Games" class="text-color-nonactive eg-footer-icon-eg"></i>
+      <i title="Unreal Engine" class="text-color-nonactive eg-footer-icon-ue"></i>
    </div>
    </div>
    </div>
 </footer>
 
-   
-    <script src="../js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

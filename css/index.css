@@ -685,6 +685,11 @@ footer span:hover {
   }
   .descrip{
     display: none;
+  }
+  .game{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
   }  
 }
 .descrip{

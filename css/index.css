@@ -30,6 +30,10 @@ li {
   margin: 8px 0; 
   border: none; 
  }
+ .dropdown-item:hover {
+  background-color: #6c757d !important; /* Gris de Bootstrap */
+  color: white !important;
+}
 
 /* Estilo para los enlaces */
 .dropdown-menu li a {

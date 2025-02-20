@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Galeria</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link
+            href="../css/gallery.css"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <img class="logo" src=""
+                    alt="logo">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#">TIENDA</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light"
+                                    href="#">Asistencia</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light"
+                                    href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Distribuir
+                                </a>
+                                <ul class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item"
+                                            href="#">Foro</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#">Información</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button
+                                class="btn btn-custom me-2 text-light text-bg-secondary"
+                                type="button">Iniciar sesión</button>
+                            <button
+                                class="btn btn-custom text-light text-bg-secondary"
+                                type="button">Descargar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container my-3">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex m-0 pe-2">
+                            <div class="input-group">
+                                <span class="input-group-text"><i
+                                        class="bi bi-search"></i></span>
+                                <input class="form-control" type="search"
+                                    placeholder="Buscar" aria-label="Buscar">
+                            </div>
+                        </form>
+                        <button class="navbar-toggler ms-1 p-1" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#searchCollapse"
+                            aria-controls="searchCollapse" aria-expanded="false"
+                            aria-label="Alternar opciones de búsqueda">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="searchCollapse">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ">
+                            <li class="nav-item ">
+                                <span class="nav-link">Descubrir</span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">Noticias</span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">Explorar</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container my-5">
+            <h2 class="mb-4 text-white">Géneros populares</h2>
+            <div id="genreCarousel" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Carrusel Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-5">
+                            <div class="card genre-card">
+                                <img src="../resources/images/carreras.png"
+                                    alt="Carreras">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Carreras</h5>
+                                </div>
+                            </div>
+                            <div class="card genre-card">
+                                <img src="../resources/images/plataformas.svg"
+                                    alt="Casuales">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Plataformas</h5>
+                                </div>
+                            </div>
+                            <div class="card genre-card">
+                                <img src="../resources/images/arcade.svg"
+                                    alt="Casuales">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Arcade</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carrusel Item 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-5">
+                            <div class="card genre-card">
+                                <img src="../resources/images/deportes.svg"
+                                    alt="Deportes">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Deportes</h5>
+                                </div>
+                            </div>
+                            <div class="card genre-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Disparos">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Cartas</h5>
+                                </div>
+                            </div>
+                            <div class="card genre-card">
+                                <img src="../resources/images/disparos.svg"
+                                    alt="Disparos">
+                                <div class="card-body">
+                                    <h5 class="genre-title">Disparos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del Carrusel -->
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#genreCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#genreCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="row align-items-start">
+                <!-- Columna principal -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary bg-transparent dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mostrar:
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#" data-value="Nuevo lanzamiento">Nuevo lanzamiento</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-value="Popular">Popular</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-value="Recomendados">Recomendados</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-value="Todos">Todos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    
+                    <div id="contenedorCards"
+                        class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                        <!-- Tarjeta de juego -->
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Two Point Hospital">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">UEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">29,99 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repite las tarjetas de juego con diferentes textos -->
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Summer Dates">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">UEGO DE PRUEBA</h6>
+                                    <span
+                                        class="badge badge-highlight mt-1">Primero
+                                        en Epic</span>
+                                    <p class="mt-2">6,29 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="HEINZ HONOR">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">UEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">9,99 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Town Market">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">JUEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">0,89 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Town Market">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">JUEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">0,89 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Town Market">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">JUEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">0,89 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Town Market">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">JUEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">0,89 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card game-card">
+                                <img src="../resources/images/cartas.svg"
+                                    alt="Town Market">
+                                <div class="card-body">
+                                    <span class="badge badge-custom">Juego
+                                        base</span>
+                                    <h6 class="mt-2">JUEGO DE PRUEBA</h6>
+                                    <span class="badge badge-custom mt-1">Ya en
+                                        Epic</span>
+                                    <p class="mt-2">0,89 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filtros -->
+                <div id="filtros" class="col-lg-3">
+                    <div class="filters">
+                        <div class="mb-3">
+                            <input type="text"
+                                class="form-control form-control-dark"
+                                placeholder="Palabras clave">
+                        </div>
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item bg-transparent text-white border-0">Eventos</li>
+                            <li
+                                class="list-group-item bg-transparent text-white border-0">Precio</li>
+                            <li
+                                class="list-group-item bg-transparent text-white border-0">Género</li>
+                            <li
+                                class="list-group-item bg-transparent text-white border-0">Funciones</li>
+                            <li
+                                class="list-group-item bg-transparent text-white border-0">Tipos</li>
+                        </ul>
+                        <a href="#"
+                            class="d-block mt-3 text-decoration-underline">restablecer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="../js/gallery.js"></script>
+       
+    </body>
+</html>

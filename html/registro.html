@@ -3,113 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Accesible</title> 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registro Accesible</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4">
-            <h1 class="text-center mb-4">Registrarse</h1>
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
-                </div>
-                <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Crea una contraseña">
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirmar Contraseña</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Repite tu contraseña">
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
-            </form>
-            <hr>
-            <p class="text-center">O regístrate con:</p>
-            <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-google mx-2">Google</a>
-                <a href="#" class="btn btn-facebook mx-2">Facebook</a>
-                <a href="#" class="btn btn-github mx-2">GitHub</a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-1">
-            <i class="fa fa-facebook-f"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-youtube-play"></i>
-          </div>
-          <div class="footer-2">
-            <i onclick="topFunction()" id="myBtn" class="fa fa-caret-square-o-up"></i>
-          </div>
-        </div>
-        <div class="text-container">
-          <div class="footer-text">
-            <p>Resources</p>
-          </div>
-          <div class="dsc-container">
-            <div class="columnc">
-              <span>Support-A-Creator</span>
-              <span>Distribute on Figma Games</span>
-              <span>Careers</span>
-              <span>Company</span>
-            </div>
-            <div class="columnc">
-              <span>Fan Art Policy</span>
-              <span>UX Research</span>
-              <span>Store EULA</span>
-            </div>
-            <div class="columnc">
-              <span>Online Services</span>
-              <span>Community Rules</span>
-              <span>FigmaGames Newsroom</span>
-            </div>
-          </div>
-          
-          <div class="footer-text">
-            <p>Made By Figma Games</p>
-          </div>
-          <div class="dsc-container footer-made-by">
-            <div class="columnc">
-              <span>Battle Breakers</span>
-              <span>FigmaGamer</span>
-              <span>Infinity Blade</span>
-            </div>
-            <div class="columnc">
-              <span>Robo Recall</span>
-              <span>Shadow Complex</span>
-              <span>Figmareal Tournament</span>
-            </div>
-          </div>
-          <hr class="footer-hr">
-          <div class="rights">
-            <p>© 2025, Figma Games, Inc. Todos los derechos reservados. FigmaGamer, Figma Games, el logotipo de Figma Games, son marcas comerciales o marcas registradas de Figma Games, Inc. en España y en otros lugares. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios Adri y Fer.</p>
-          </div>
-          <div class="footer-container footer-bottom">
-            <div class="footer-1 footer-bottom-links">
-              <span class="fs-6">Terms of Service</span>
-              <span class="fs-6">Privacy Policy</span>
-              <span class="fs-6">Store Refund Policy</span>
-            </div>
-            <div class="footer-2 footer-bottom-icons">
-              <i title="Epic Games" class="text-color-nonactive eg-footer-icon-eg"></i>
-              <i title="Unreal Engine" class="text-color-nonactive eg-footer-icon-ue"></i>
-            </div>
-          </div>
-        </div>
-      </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../resources/images/logorecortado.png" alt="Epic Games Logo" height="30" class="d-inline-block align-top">
+              STORE
+          </a>
+          <!-- Eliminamos el botón del menú de hamburguesa -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Asistencia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Distribuir
+                      </a>
+                      <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-light" href="#">Foro Comunidad</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-light" href="#">Contacto</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-light" href="#">Información legal de uso</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <span class="text-white me-3 fs-5"><i class="bi bi-cart"></i></span>
+                  <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                  <button class="btn btn-secondary">Registrate!</button>
+              </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+      <div class="card p-4">
+          <h1 class="text-center mb-4">Registrarse</h1>
+          <form>
+              <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+              </div>
+              <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" placeholder="Crea una contraseña">
+              </div>
+              <div class="mb-3">
+                  <label for="confirm-password" class="form-label">Confirmar Contraseña</label>
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Repite tu contraseña">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block w-100">Registrarse</button>
+          </form>
+          <hr>
+          <p class="text-center">O regístrate con:</p>
+          <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-outline-danger mx-2"><i class="bi bi-google"></i> Google</a>
+              <a href="#" class="btn btn-outline-primary mx-2"><i class="bi bi-facebook"></i> Facebook</a>
+              <a href="#" class="btn btn-outline-dark mx-2"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+      </div>
+  </div>
+
+  <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5>Recursos</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white text-decoration-none">Support-A-Creator</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Distribute on Figma Games</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Company</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <h5>Hecho por Figma Games</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white text-decoration-none">Battle Breakers</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">FigmaGamer</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Infinity Blade</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <div class="text-center">
+              <p>© 2025, Figma Games, Inc. Todos los derechos reservados.</p>
+              <div class="d-flex justify-content-center gap-3">
+                  <a href="#" class="text-white text-decoration-none">Términos de Servicio</a>
+                  <a href="#" class="text-white text-decoration-none">Política de Privacidad</a>
+                  <a href="#" class="text-white text-decoration-none">Política de Reembolso</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

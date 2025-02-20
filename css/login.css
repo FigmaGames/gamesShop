@@ -1,0 +1,141 @@
+body {
+  background-color: #0a192f; /* Azul oscuro */
+  color: #000000; /* Texto blanco */
+}
+/* Header */
+.separator {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 8px 0; 
+  border: none; 
+ }
+ .dropdown-item:hover {
+  background-color: #6c757d !important; /* Gris de Bootstrap */
+  color: white !important;
+}
+/* Formulario */
+.card {
+  background-color: #7c7c7c; /* Gris oscuro */
+  border: none;
+}
+.btn-primary {
+  background-color: #2d3748; /* Gris más oscuro */
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #4a5568; /* Gris medio */
+}
+.btn-google {
+  background-color: #dd4b39; /* Rojo Google */
+  color: #ffffff;
+}
+.btn-facebook {
+  background-color: #3b5998; /* Azul Facebook */
+  color: #ffffff;
+}
+.btn-github {
+  background-color: #333333; /* Negro GitHub */
+  color: #ffffff;
+}
+.form-control {
+  background-color: #adadad; /* Gris oscuro para los inputs */
+  border: 1px solid #4a5568; /* Borde gris medio */
+  color: #ffffff; /* Texto blanco */
+}
+.form-control:focus {
+  background-color: #2d3748;
+  border-color: #667eea; /* Borde azul claro al enfocar */
+  color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.divb{
+  gap: 10px;
+}
+/* Footer styles */
+footer {
+  background-color: #202020;
+  height: 100%;
+}
+
+.footer-1 {
+  font-size: 32px;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.footer-container {
+  padding-top: 2%;
+  font-size: 32px;
+  color: #CCCCCC;
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-container {
+  font-size: 13px;
+  width: 90vw;
+  color: #CCCCCC;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.dsc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding-bottom: 2.5%;
+}
+
+.columnc {
+  font-size: 13px;
+  color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnc span {
+  padding-bottom: 7%;
+}
+
+.rights {
+  padding-top: 3%;
+  font-size: 11.36px;
+  width: 45vw;
+  line-height: 25px;
+}
+
+footer span:hover {
+  color: #0078E5;
+  transition: 0.1s ease;
+}
+
+.footer-bottom {
+  padding-top: 2%;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 2%;
+}
+
+.footer-bottom-icons {
+  display: flex;
+  gap: 2%;
+}

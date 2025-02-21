@@ -113,3 +113,220 @@ nav {
     color: #cfcfcf; /* Un gris claro para subtítulos o textos complementarios */
     font-size: 0.95rem;
   }
+
+
+  footer {
+    background-color: #202020;
+    height: 100%;
+  }
+  
+  .footer-1 {
+    font-size: 32px;
+    color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .footer-container {
+    padding-top: 2%;
+    font-size: 32px;
+    color: #CCCCCC;
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .text-container {
+    font-size: 13px;
+    width: 90vw;
+    color: #CCCCCC;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+  
+  .dsc-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding-bottom: 2.5%;
+  }
+  
+  .columnc {
+    font-size: 13px;
+    color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columnc span {
+    padding-bottom: 7%;
+  }
+  
+  .rights {
+    padding-top: 3%;
+    font-size: 11.36px;
+    width: 45vw;
+    line-height: 25px;
+  }
+  
+  footer span:hover {
+    color: #0078E5;
+    transition: 0.1s ease;
+  }
+  
+  .footer-bottom {
+    padding-top: 2%;
+  }
+  
+  .footer-bottom-links {
+    display: flex;
+    gap: 2%;
+  }
+  
+  .footer-bottom-icons {
+    display: flex;
+    gap: 2%;
+  }
+  @media screen and (max-width: 1000px) {
+    .customnav {
+      position: relative;
+      z-index: 1;
+      background-color: #121212;
+    }
+    .ph {
+      margin: 0;
+    }
+  }
+  a {
+    text-decoration: none !important;
+  }
+  
+  nav div ul li {
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  /* Estilos del header */
+  
+  /* Estilo para la línea separadora */
+  .separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+    border: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #6c757d !important;
+    /* Gris de Bootstrap */
+    color: white !important;
+  }
+  
+  /* Estilo para los enlaces */
+  .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+  
+  }
+  
+  .customnav {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navbar {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-color: #2A2A2A;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .nav {
+    width: 100vw;
+    display: flex;
+    background-color: #121212;
+    height: 5%;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+  }
+  
+  .input-container {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    height: 40px;
+  }
+  
+  .nav i {
+    position: relative;
+    left: 25px;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 12.75px;
+    font-weight: 12.75;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .input {
+    border-radius: 20px;
+    border: none;
+    padding-left: 40px;
+    background-color: #202020;
+    color: #CCCCCC;
+    outline: none;
+    min-width: 14vw;
+    max-width: 16vw;
+  }
+  
+  .dsc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    color: #CCCCCC;
+  }
+  
+  .abc {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 13.5vw;
+    margin: 30px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    width: 59.08px;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+  
+  .dsc:hover {
+    color: #F5F5F5;
+  }
+
+.navbar.bg-dark {
+    position: relative;
+}

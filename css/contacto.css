@@ -1,5 +1,5 @@
 body {
-  background-color: #0a192f;
+  background-color: #0D1117;
   color: #ffffff;
 }
 /* Header */
@@ -10,12 +10,12 @@ body {
   border: none; 
  }
  .dropdown-item:hover {
-  background-color: #6c757d !important; /* Gris de Bootstrap */
+  background-color: #6c757d !important; 
   color: white !important;
 }
 /* Formulario */
 .card {
-  background-color: #7c7c7c;
+  background-color: #161B22;
   border: none;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@ body {
 }
 .faq-item {
   cursor: pointer;
-  color: #0020b0;
+  color: #355aff;
 }
 .faq-item:hover {
   text-decoration: underline;
@@ -54,7 +54,12 @@ body {
 .bttn{
   padding: 10px;
 }
-
+h3{
+  color: white;
+}
+.form-label{
+  color: white;
+}
 /* Footer styles */
 footer {
     background-color: #202020;

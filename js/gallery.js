@@ -7,4 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('filterDropdown').textContent = selectedText;
         });
     });
-});
+
+    const cards = document.querySelectorAll("#contenedorCards .card.game-card");
+    console.log(cards);
+  
+    cards.forEach(card => {
+      card.addEventListener("click", function () {
+        const title = card.querySelector("h6")?.textContent.trim() || "";
+        const price = card.querySelector("p")?.textContent.trim() || "";
+        const imageSrc = card.querySelector("img")?.getAttribute("src") || "";
+  
+        // Se crea una query string con los datos de la tarjeta
+        const params = new URLSearchParams({ title, price, image: imageSrc });
+        // Redirige a detail.html, pasando los datos en la URL
+        window.location.href = `detail.html?${params.toString()}`;
+      });
+    });
+  });

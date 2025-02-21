@@ -2,8 +2,8 @@
     --primary-color: #1f1f1f;       /* Gris muy oscuro */
     --secondary-color: #333333;     /* Gris oscuro */
     --accent-color: #444444;        /* Gris ligeramente más claro para acentos */
-    --background-color: #121212;    /* Fondo casi negro */
-    --surface-color: #181818;       /* Superficie: ligeramente más claro que el background */
+    --background-color: #0D1117 ;    /* Fondo casi negro */
+    --surface-color: #161B22;       /* Superficie: ligeramente más claro que el background */
     --text-primary: #e0e0e0;        /* Texto principal en tono claro */
     --text-secondary: #aaaaaa;      /* Texto secundario */
     --info-color: #bb86fc;          /* Púrpura para información */
@@ -188,7 +188,7 @@ a {
     margin-left: 0 !important;
 }
 .game-card {
-    background-color: #2c3034;
+    background-color: var(--surface-color);
     border: none;
     border-radius: 10px;
     overflow: hidden;

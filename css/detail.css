@@ -13,7 +13,9 @@ body {
     background-color: var(--background-color);
     color: white !important;
 }
-
+body img{
+  cursor: pointer !important;
+}
 nav {
     background-color: var(--secondary-color);
     color: var(--text-primary);

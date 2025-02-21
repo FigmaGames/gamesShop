@@ -13,12 +13,129 @@ body {
     background-color: var(--background-color);
 }
 
-nav {
-    background-color: var(--secondary-color);
-    color: var(--text-primary);
-    padding: 10px;
+a {
+    text-decoration: none !important;
+  }
+  
+  nav div ul li {
+    list-style: none;
+    justify-content: center;
     text-align: center;
-}
+    align-items: center;
+  }
+  
+  /* Estilos del header */
+  
+  /* Estilo para la línea separadora */
+  .separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+    border: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #6c757d !important;
+    /* Gris de Bootstrap */
+    color: white !important;
+  }
+  
+  /* Estilo para los enlaces */
+  .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+  
+  }
+  
+  .customnav {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navbar {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-color: #2A2A2A;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .nav {
+    width: 100vw;
+    display: flex;
+    background-color: #121212;
+    height: 5%;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+  }
+  
+  .input-container {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    height: 40px;
+  }
+  
+  .nav i {
+    position: relative;
+    left: 25px;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 12.75px;
+    font-weight: 12.75;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .input {
+    border-radius: 20px;
+    border: none;
+    padding-left: 40px;
+    background-color: #202020;
+    color: #CCCCCC;
+    outline: none;
+    min-width: 14vw;
+    max-width: 16vw;
+  }
+  
+  .dsc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    color: #CCCCCC;
+  }
+  
+  .abc {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 13.5vw;
+    margin: 30px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    width: 59.08px;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+  
+  .dsc:hover {
+    color: #F5F5F5;
+  }
 
 .navbar.bg-dark {
     position: relative;
@@ -109,36 +226,13 @@ nav {
     font-size: 0.9rem;
   }
 
-/* #genreCarousel {
-    position: relative;
-} */
-
-/* Personaliza los botones del carrusel */
-/* .carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 0.6rem;
-    width: 1.9rem;
-    height: 1.9rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* Define la posición de cada botón en el eje horizontal */
-/* .carousel-control-prev {
-    right: 3.1rem;
+  @media screen and (max-width: 1000px) {
+    .customnav {
+      position: relative;
+      z-index: 1;
+      background-color: #121212;
+    }
+    .ph {
+      margin: 0;
+    }
 }
-
-.carousel-control-next {
-    right: 0.6rem;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-size: 0.9rem 0.9rem;
-    filter: invert(100%);
-} */

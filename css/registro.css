@@ -1,6 +1,6 @@
 body {
-    background-color: #0a192f; 
-    color: #ffffff; 
+    background-color: #0D1117; 
+    color: #ffffff !important; 
 }
 /* Header */
 .separator {
@@ -10,12 +10,12 @@ body {
   border: none; 
  }
  .dropdown-item:hover {
-  background-color: #6c757d !important; /* Gris de Bootstrap */
+  background-color: #6c757d !important;
   color: white !important;
 }
 /* Formulario */
 .card {
-    background-color: #7c7c7c; 
+    background-color: #161B22; 
     border: none;
 }
 .btn-primary {
@@ -46,6 +46,12 @@ body {
     background-color: #2d3748; 
     border-color: #667eea; 
     color: #ffffff;
+}
+.text-center{
+  color: white;
+}
+.form-label{
+  color: white;
 }
 /* Footer styles */
 footer {

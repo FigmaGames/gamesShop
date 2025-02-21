@@ -23,24 +23,32 @@ li {
 
 /* Estilos del header */
 
- /* Estilo para la línea separadora */
- .separator {
+/* Estilo para la línea separadora */
+.separator {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 8px 0; 
-  border: none; 
- }
- .dropdown-item:hover {
-  background-color: #6c757d !important; /* Gris de Bootstrap */
+  margin: 8px 0;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #6c757d !important;
+  /* Gris de Bootstrap */
   color: white !important;
 }
 
 /* Estilo para los enlaces */
 .dropdown-menu li a {
-  padding: 10px 15px; 
-  display: block; 
-  
+  padding: 10px 15px;
+  display: block;
+
 }
+
+.customnav {
+  position: relative;
+  z-index: 1;
+}
+
 .navbar {
   height: 52px;
   display: flex;
@@ -58,9 +66,9 @@ li {
   background-color: #121212;
   height: 5%;
   flex-direction: row;
-  position: sticky;
+  position: relative;
   top: 0;
-  z-index: 999;
+  z-index: 0;
   width: 100%;
 }
 
@@ -135,12 +143,14 @@ li {
   margin: 0 auto;
   gap: 0px;
 }
-.ac{
+
+.ac {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   background: #b9b9b9 !important;
   color: #121212;
 }
+
 .carousel {
   height: 100%;
   width: 79%;
@@ -384,7 +394,7 @@ li {
 .Games {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   width: 75vw;
   margin: 0 auto;
   gap: 2%;
@@ -544,158 +554,173 @@ footer span:hover {
 /* Media queries para responsive design */
 @media screen and (max-width: 468px) {
   .imgsindsc {
-      display: none;
+    display: none;
   }
 
   .imgsindsc h1 {
-      display: none;
-      font-size: 0.2rem;
+    display: none;
+    font-size: 0.2rem;
   }
 
   .side-content {
-      gap: 0px;
+    gap: 0px;
   }
 
   .side-component img {
-      border-radius: 20px;
-      width: 20%;
-      margin: 0.5vh;
-      font-size: 11px;
+    border-radius: 20px;
+    width: 20%;
+    margin: 0.5vh;
+    font-size: 11px;
   }
-  .ph:hover{
+
+  .ph:hover {
     cursor: pointer;
   }
 
   .content-c {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin: auto auto;
-      font-size: 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto auto;
+    font-size: 2px;
   }
 
   .top-games h2 a {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .imgsindsc span {
-      font-size: 0.5rem;
+    font-size: 0.5rem;
   }
 
   .imgsindsc h1 {
-      font-size: 0.5rem;
+    font-size: 0.5rem;
   }
 
   .side-content {
-      gap: 0px;
+    gap: 0px;
   }
 
   .side-component img {
-      border-radius: 20px;
-      width: 20%;
-      margin: 0.5vh;
-      font-size: 11px;
+    border-radius: 20px;
+    width: 20%;
+    margin: 0.5vh;
+    font-size: 11px;
   }
 
   .content-c {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin: auto auto;
-      font-size: 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto auto;
+    font-size: 2px;
   }
 
   .top-games h2 a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
-  .content-c{
+  .content-c {
     padding: 50px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .imgsindsc span {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 
   .imgsindsc h1 {
-      display: none;
-      font-size: 0.7rem;
+    display: none;
+    font-size: 0.7rem;
   }
 
   .content-c {
-      font-size: 8px;
+    font-size: 8px;
   }
 
   .top-games h2 a {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 1250px) {
   .imgsindsc span {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 
   .imgsindsc h1 {
-      display: none;
-      font-size: 0.8rem;
+    display: none;
+    font-size: 0.8rem;
   }
 
   .content-c {
-      font-size: 8px;
+    font-size: 8px;
   }
 
   .top-games h2 a {
-      font-size: 12px;
+    font-size: 12px;
   }
 
-  .carousel{
+  .carousel {
     width: 100%;
   }
 
-  .content-c{
+  .content-c {
     flex-direction: column;
   }
-  .side-content{
+
+  .side-content {
     flex-direction: row;
     width: 100%;
   }
 }
-@media screen and (max-width: 1000px) {
 
-  .ph{
+@media screen and (max-width: 1000px) {
+  .customnav {
+    position: relative;
+    z-index: 1;
+    background-color: #121212;
+  }
+  .ph {
     margin: 0;
   }
-  .Games{
+
+  .Games {
     flex-direction: column;
     align-items: center;
   }
-  .kl{
+
+  .kl {
     transform: rotate(90deg);
     height: 120px;
   }
-  .sdsc{
+
+  .sdsc {
     font-size: 10px;
   }
-  .sprice{
+
+  .sprice {
     font-size: 11px;
   }
-  .input-container{
+
+  .input-container {
     left: 0vw;
   }
-  .descrip{
+
+  .descrip {
     display: none;
   }
-  .game{
+
+  .game {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-  }  
+  }
 }
-.descrip{
+
+.descrip {
   font-size: 15px;
 }

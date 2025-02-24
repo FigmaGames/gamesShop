@@ -1,403 +1,382 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Galeria</title>
-        <meta name="description" content>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link
-            href="../css/gallery.css"
-            rel="stylesheet">
-
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../html/index.html">
-                        <img src="../resources/images/logorecortado.png"
-                            alt="Epic Games Logo" height="30"
-                            class="d-inline-block align-top">
-                        STORE
-                    </a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse customnav"
-                        id="navbarContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href=".">Asistencia</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Distribuir
-                                </a>
-                                <ul class="dropdown-menu bg-black"
-                                    aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item text-light "
-                                            href="#">Foro Comunidad</a></li>
-                                    <li class="separator"></li>
-                                    <li><a class="dropdown-item text-light"
-                                            href="../html/contacto.html">Contacto</a></li>
-                                    <li class="separator"></li>
-                                    <li><a class="dropdown-item text-light"
-                                            href="#">Informacion legar de
-                                            uso</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <span class="text-white me-3 fs-5"><i
-                                    class="bi bi-cart"></i></span>
-                            <a href="../html/login.html"
-                                class="btn btn-outline-light me-2">Iniciar
-                                sesión</a>
-                            <a href="../html/registro.html"
-                                class="btn btn-secondary">Registrate!</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-       
-        </header>
-
-        <div class="container my-5">
-            <h2 class="mb-4 text-white">Géneros populares</h2>
-            <div id="genreCarousel" class="carousel slide"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Carrusel Item 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center gap-5">
-                            <div class="card genre-card">
-                                <img src="../resources/images/carreras.png"
-                                    alt="Carreras">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Carreras</h5>
-                                </div>
-                            </div>
-                            <div class="card genre-card">
-                                <img
-                                    src="../resources/images/IOMYGXNRUVAZTK3JJ7DCE3LSTM.avif"
-                                    alt="Casuales">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Plataformas</h5>
-                                </div>
-                            </div>
-                            <div class="card genre-card">
-                                <img
-                                    src="../resources/images/H2x1_NSwitchDS_Tetris99_image1600w.jpg"
-                                    alt="Casuales">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Arcade</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carrusel Item 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center gap-5">
-                            <div class="card genre-card">
-                                <img
-                                    src="../resources/images/egs-fc24-ultimate-carousel-logo-350x261-778d03f6f36d.png"
-                                    alt="Deportes">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Deportes</h5>
-                                </div>
-                            </div>
-                            <div class="card genre-card">
-                                <img
-                                    src="../resources/images/hearthstone-heroes-of-warcraft-5x-booster-pack-pc-juego-battle-net-europe-cover.jpg"
-                                    alt="Disparos">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Cartas</h5>
-                                </div>
-                            </div>
-                            <div class="card genre-card">
-                                <img
-                                    src="../resources/images/egs-valorant-ep-7-act-1-breaker-1920x1080-39b521ddfc68.avif"
-                                    alt="Disparos">
-                                <div class="card-body">
-                                    <h5 class="genre-title">Disparos</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Controles del Carrusel -->
-                <button class="carousel-control-prev" type="button"
-                    data-bs-target="#genreCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                    data-bs-target="#genreCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galeria</title>
+    <meta name="description" content="Galería de juegos de la tienda">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="../css/gallery.css"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Menú Principal">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../html/index.html" aria-label="Ir al inicio">
+            <img src="../resources/images/logorecortado.png"
+              alt="Logo de Epic Games" height="30"
+              class="d-inline-block align-top">
+            STORE
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Mostrar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse customnav"
+            id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="." role="menuitem" aria-label="Asistencia">Asistencia</a>
+              </li>
+              <li class="nav-item dropdown" role="none">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false" aria-haspopup="true"
+                  aria-label="Desplegar opciones de Distribuir">
+                  Distribuir
+                </a>
+                <ul class="dropdown-menu bg-black"
+                  aria-labelledby="navbarDropdown" role="menu">
+                  <li role="none">
+                    <a class="dropdown-item text-light" href="#"
+                      role="menuitem" aria-label="Foro Comunidad">Foro Comunidad</a>
+                  </li>
+                  <li class="separator" role="separator"></li>
+                  <li role="none">
+                    <a class="dropdown-item text-light" href="../html/contacto.html"
+                      role="menuitem" aria-label="Contacto">Contacto</a>
+                  </li>
+                  <li class="separator" role="separator"></li>
+                  <li role="none">
+                    <a class="dropdown-item text-light" href="#"
+                      role="menuitem" aria-label="Información legal de uso">Informacion legar de uso</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-center" role="group" aria-label="Acciones de usuario">
+              <span class="text-white me-3 fs-5" aria-hidden="true">
+                <i class="bi bi-cart"></i>
+              </span>
+              <a href="../html/login.html" class="btn btn-outline-light me-2" role="button" aria-label="Iniciar sesión">Iniciar sesión</a>
+              <a href="../html/registro.html" class="btn btn-secondary" role="button" aria-label="Registrate!">Registrate!</a>
             </div>
+          </div>
         </div>
-        <div class="container py-4">
-            <div class="row align-items-start">
-                <!-- Columna principal -->
-                <div
-                    class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="dropdown">
-                        <button
-                            class="btn btn-secondary bg-transparent dropdown-toggle"
-                            type="button" id="filterDropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Mostrar:
-                        </button>
-                        <ul class="dropdown-menu"
-                            aria-labelledby="filterDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    data-value="Nuevo lanzamiento">Nuevo
-                                    lanzamiento</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    data-value="Popular">Popular</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    data-value="Recomendados">Recomendados</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    data-value="Todos">Todos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      </nav>
+    </header>
 
-                <div class="col-lg-9">
-
-                    <div id="contenedorCards"
-                        class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                        <!-- Tarjeta de juego -->
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3"
-                                    src="../resources/images/kingdomComepng.png"
-                                    alt="Two Point Hospital">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Kingdom Come</span>
-                                    <h6 class="mt-2">Kingdom Come</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">29,99 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repite las tarjetas de juego con diferentes textos -->
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3" src="../resources/images/farmSimulator.jpg"
-                                    alt="Summer Dates">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Farming Simulator</span>
-                                    <h6 class="mt-2">Farming Simulator</h6>
-                                    <span
-                                        class="badge badge-highlight mt-1">Primero
-                                        en Figma Games</span>
-                                    <p class="mt-2">6,29 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3" src="../resources/images/genshin.png"
-                                    alt="HEINZ HONOR">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Guenshin Impact</span>
-                                    <h6 class="mt-2">Guenshin Impact</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">9,99 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3"
-                                    src="../resources/images/Rocket_League_coverart.jpg"
-                                    alt="Town Market">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Rocket League</span>
-                                    <h6 class="mt-2">Rocket League</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">0,89 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3" src="../resources/images/civilization7.jpg"
-                                    alt="Town Market">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Civilization</span>
-                                    <h6 class="mt-2">Civilization</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">0,89 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3"
-                                    src="../resources/images/81+v6ue0cwL._AC_SL1500_.jpg"
-                                    alt="Town Market">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Terraria</span>
-                                    <h6 class="mt-2">Terraria</h6>
-                                    <span class="badge badge-custom mt-1">Ya en Figma Games</span>
-                                    <p class="mt-2">0,89 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3"
-                                    src="../resources/images/stardew-valley-fishing.webp"
-                                    alt="Town Market">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Stardew Valley</span>
-                                    <h6 class="mt-2">Stardew Valley</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">0,89 €</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card game-card">
-                                <img class="pt-3" src="../resources/images/isaac.jpg"
-                                    alt="Town Market">
-                                <div class="card-body">
-                                    <span class="badge badge-custom">Binding of Isaac</span>
-                                    <h6 class="mt-2">Binding of Isaac</h6>
-                                    <span class="badge badge-custom mt-1">Ya en FigmaGames</span>
-                                    <p class="mt-2">0,89 €</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main role="main">
+      <div class="container my-5" aria-label="Sección de Géneros Populares">
+        <h2 class="mb-4 text-white" aria-level="2">Géneros populares</h2>
+        <div id="genreCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Carrusel de géneros">
+          <div class="carousel-inner" role="listbox">
+            <!-- Carrusel Item 1 -->
+            <div class="carousel-item active" role="option" aria-label="Primer conjunto de géneros">
+              <div class="d-flex justify-content-center gap-5">
+                <div class="card genre-card" role="group" aria-label="Género Carreras">
+                  <img src="../resources/images/carreras.png"
+                    alt="Carreras" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Carreras</h5>
+                  </div>
                 </div>
-                <!-- Filtros -->
-                <div id="filtros" class="col-lg-3">
-                    <div class="filters">
-                        <div class="mb-3">
-                            <input type="text"
-                                class="form-control form-control-dark"
-                                placeholder="Palabras clave">
-                        </div>
-                        <ul class="list-group">
-                            <li
-                                class="list-group-item bg-transparent text-white border-0">Eventos</li>
-                            <li
-                                class="list-group-item bg-transparent text-white border-0">Precio</li>
-                            <li
-                                class="list-group-item bg-transparent text-white border-0">Género</li>
-                            <li
-                                class="list-group-item bg-transparent text-white border-0">Funciones</li>
-                            <li
-                                class="list-group-item bg-transparent text-white border-0">Tipos</li>
-                        </ul>
-                        
-                    </div>
+                <div class="card genre-card" role="group" aria-label="Género Plataformas">
+                  <img src="../resources/images/IOMYGXNRUVAZTK3JJ7DCE3LSTM.avif"
+                    alt="Plataformas" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Plataformas</h5>
+                  </div>
                 </div>
+                <div class="card genre-card" role="group" aria-label="Género Arcade">
+                  <img src="../resources/images/H2x1_NSwitchDS_Tetris99_image1600w.jpg"
+                    alt="Arcade" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Arcade</h5>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Carrusel Item 2 -->
+            <div class="carousel-item" role="option" aria-label="Segundo conjunto de géneros">
+              <div class="d-flex justify-content-center gap-5">
+                <div class="card genre-card" role="group" aria-label="Género Deportes">
+                  <img src="../resources/images/egs-fc24-ultimate-carousel-logo-350x261-778d03f6f36d.png"
+                    alt="Deportes" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Deportes</h5>
+                  </div>
+                </div>
+                <div class="card genre-card" role="group" aria-label="Género Cartas">
+                  <img src="../resources/images/hearthstone-heroes-of-warcraft-5x-booster-pack-pc-juego-battle-net-europe-cover.jpg"
+                    alt="Cartas" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Cartas</h5>
+                  </div>
+                </div>
+                <div class="card genre-card" role="group" aria-label="Género Disparos">
+                  <img src="../resources/images/egs-valorant-ep-7-act-1-breaker-1920x1080-39b521ddfc68.avif"
+                    alt="Disparos" role="img">
+                  <div class="card-body">
+                    <h5 class="genre-title" aria-level="3">Disparos</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controles del Carrusel -->
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#genreCarousel" data-bs-slide="prev" aria-label="Anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#genreCarousel" data-bs-slide="next" aria-label="Siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <footer>
-            <div class="footer-container">
-               <div class="footer-1">
-                <i class="fa fa-facebook-f"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-youtube-play"></i>
-               </div>
-               <div class="footer-2">
-                <i onclick="topFunction()" id="myBtn" class="fa fa-caret-square-o-up"></i>
+      </div>
+
+      <div class="container py-4" aria-label="Listado de juegos">
+        <div class="row align-items-start">
+          <!-- Columna principal -->
+          <div class="d-flex justify-content-between align-items-center mb-4" role="banner" aria-label="Encabezado del listado de juegos">
+            <div class="dropdown" role="group" aria-label="Filtro de juegos">
+              <button class="btn btn-secondary bg-transparent dropdown-toggle"
+                type="button" id="filterDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-label="Mostrar opciones de filtro">
+                Mostrar:
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="filterDropdown" role="menu">
+                <li role="none">
+                  <a class="dropdown-item" href="#"
+                    data-value="Nuevo lanzamiento" role="menuitem" aria-label="Nuevo lanzamiento">Nuevo lanzamiento</a>
+                </li>
+                <li role="none">
+                  <a class="dropdown-item" href="#"
+                    data-value="Popular" role="menuitem" aria-label="Popular">Popular</a>
+                </li>
+                <li role="none">
+                  <a class="dropdown-item" href="#"
+                    data-value="Recomendados" role="menuitem" aria-label="Recomendados">Recomendados</a>
+                </li>
+                <li role="none">
+                  <a class="dropdown-item" href="#"
+                    data-value="Todos" role="menuitem" aria-label="Todos">Todos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-9" aria-label="Tarjetas de juegos">
+            <div id="contenedorCards" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" role="list">
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Kingdom Come">
+                  <img class="pt-3"
+                    src="../resources/images/kingdomComepng.png"
+                    alt="Imagen de Kingdom Come" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Kingdom Come</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 29,99 €">29,99 €</p>
+                  </div>
+                </div>
               </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Farming Simulator">
+                  <img class="pt-3" src="../resources/images/farmSimulator.jpg"
+                    alt="Imagen de Farming Simulator" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Farming Simulator</h6>
+                    <span class="badge badge-highlight mt-1" aria-label="Estado: Primero en FigmaGames">Primero en Figma Games</span>
+                    <p class="mt-2" aria-label="Precio: 6,29 €">6,29 €</p>
+                  </div>
+                </div>
               </div>
-              <div class="text-container">
-                <div class="footer-text">
-                 <p>Recursos</p>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Guenshin Impact">
+                  <img class="pt-3" src="../resources/images/genshin.png"
+                    alt="Imagen de Guenshin Impact" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Guenshin Impact</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 9,99 €">9,99 €</p>
+                  </div>
                 </div>
-                <div class="dsc-container d-flex flex-row justify-content-between">
-                  <div class="columnc">
-                   <span>Support-A-Creator</span>
-                   <span>Distribute on Figma Games</span>
-                   <span>Careers</span>
-                   <span>Company</span>
+              </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Rocket League">
+                  <img class="pt-3"
+                    src="../resources/images/Rocket_League_coverart.jpg"
+                    alt="Imagen de Rocket League" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Rocket League</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 0,89 €">0,89 €</p>
                   </div>
-                  <div class="columnc">
-                    <span>Fan Art Policy</span>
-                    <span>UX Research</span>
-                    <span>Store EULA</span>
-                  </div>
-                  <div class="columnc">
-                    <span>Online Services</span>
-                    <span>Community Rules</span>
-                    <span>FigmaGames Newsroom</span>
-                  </div>
-    
-                  <div class="footer-text">
-                    <p>Made By Figma Games</p>
-                   </div>
-                   <div class="dsc-container footer-made-by">
-                     <div class="columnc">
-                      <span>Battle Breakers</span>
-                      <span>FigmaGamer</span>
-                      <span>Infinity Blade</span>
-                     </div>
-                     <div class="columnc">
-                       <span>Robo Recall</span>
-                       <span>Shadow Complex</span>
-                       <span>Figmareal Tournament</span>
-                     </div>
-                   </div>
                 </div>
-                <hr class="footer-hr">
-                <div class="rights">
-                  <p>© 2025, Figma Games, Inc. Todos los derechos reservados. FigmaGamer, Figma Games, el logotipo de Figma Games, son marcas comerciales o marcas registradas de Figma Games, Inc. en España y en otros lugares. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios Adri y Fer.</p>
-                </div>
-                <div class="footer-container footer-bottom">
-                  <div class="footer-1 footer-bottom-links">
-                   <span class="fs-6">Terms of Service</span>
-                   <span class="fs-6">Privacy Policy</span>
-                   <span class="fs-6">Store Refund Policy</span>
+              </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Civilization">
+                  <img class="pt-3" src="../resources/images/civilization7.jpg"
+                    alt="Imagen de Civilization" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Civilization</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 0,89 €">0,89 €</p>
                   </div>
-                  <div class="footer-2 footer-bottom-icons">
-                    <i title="Epic Games" class="text-color-nonactive eg-footer-icon-eg"></i>
-                    <i title="Unreal Engine" class="text-color-nonactive eg-footer-icon-ue"></i>
-                 </div>
-                 </div>
-                 </div>
-              </footer>
-    
-            <script
-                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-            <script src="../js/gallery.js"></script>
-            <script src="../js/index.js"></script>
-        </body>
+                </div>
+              </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Terraria">
+                  <img class="pt-3" src="../resources/images/81+v6ue0cwL._AC_SL1500_.jpg"
+                    alt="Imagen de Terraria" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Terraria</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 0,89 €">0,89 €</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Stardew Valley">
+                  <img class="pt-3" src="../resources/images/stardew-valley-fishing.webp"
+                    alt="Imagen de Stardew Valley" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Stardew Valley</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 0,89 €">0,89 €</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta de juego -->
+              <div class="col" role="listitem">
+                <div class="card game-card" role="article" aria-label="Juego: Binding of Isaac">
+                  <img class="pt-3" src="../resources/images/isaac.jpg"
+                    alt="Imagen de Binding of Isaac" role="img">
+                  <div class="card-body">
+                    <h6 class="mt-2" aria-level="4">Binding of Isaac</h6>
+                    <span class="badge badge-custom mt-1" aria-label="Estado: Ya en FigmaGames">Ya en FigmaGames</span>
+                    <p class="mt-2" aria-label="Precio: 0,89 €">0,89 €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtros -->
+          <div id="filtros" class="col-lg-3" aria-label="Filtros de búsqueda">
+            <div class="filters" role="region">
+              <div class="mb-3">
+                <input type="text"
+                  class="form-control form-control-dark"
+                  placeholder="Palabras clave" aria-label="Buscar por palabras clave">
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item bg-transparent text-white border-0" aria-label="Filtro: Eventos">Eventos</li>
+                <li class="list-group-item bg-transparent text-white border-0" aria-label="Filtro: Precio">Precio</li>
+                <li class="list-group-item bg-transparent text-white border-0" aria-label="Filtro: Género">Género</li>
+                <li class="list-group-item bg-transparent text-white border-0" aria-label="Filtro: Funciones">Funciones</li>
+                <li class="list-group-item bg-transparent text-white border-0" aria-label="Filtro: Tipos">Tipos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer  aria-label="Pie de página">
+      <div class="footer-container" role="region" aria-label="Redes sociales y navegación secundaria">
+        <div class="footer-1" aria-label="Redes sociales">
+          <i class="fa fa-facebook-f" role="img" aria-label="Facebook"></i>
+          <i class="fa fa-twitter" role="img" aria-label="Twitter"></i>
+          <i class="fa fa-youtube-play" role="img" aria-label="YouTube"></i>
+        </div>
+        <div class="footer-2">
+          <i onclick="topFunction()" id="myBtn" class="fa fa-caret-square-o-up" role="button" tabindex="0" aria-label="Volver arriba"></i>
+        </div>
+      </div>
+      <div class="text-container" role="region" aria-label="Enlaces y recursos">
+        <div class="footer-text">
+          <p>Recursos</p>
+        </div>
+        <div class="dsc-container d-flex flex-row justify-content-between" role="navigation" aria-label="Enlaces secundarios">
+          <div class="columnc">
+            <span aria-label="Support-A-Creator">Support-A-Creator</span>
+            <span aria-label="Distribute on Figma Games">Distribute on Figma Games</span>
+            <span aria-label="Careers">Careers</span>
+            <span aria-label="Company">Company</span>
+          </div>
+          <div class="columnc">
+            <span aria-label="Fan Art Policy">Fan Art Policy</span>
+            <span aria-label="UX Research">UX Research</span>
+            <span aria-label="Store EULA">Store EULA</span>
+          </div>
+          <div class="columnc">
+            <span aria-label="Online Services">Online Services</span>
+            <span aria-label="Community Rules">Community Rules</span>
+            <span aria-label="FigmaGames Newsroom">FigmaGames Newsroom</span>
+          </div>
+
+          <div class="footer-text">
+            <p>Made By Figma Games</p>
+          </div>
+          <div class="dsc-container footer-made-by" role="navigation" aria-label="Marcas colaboradoras">
+            <div class="columnc">
+              <span aria-label="Battle Breakers">Battle Breakers</span>
+              <span aria-label="FigmaGamer">FigmaGamer</span>
+              <span aria-label="Infinity Blade">Infinity Blade</span>
+            </div>
+            <div class="columnc">
+              <span aria-label="Robo Recall">Robo Recall</span>
+              <span aria-label="Shadow Complex">Shadow Complex</span>
+              <span aria-label="Figmareal Tournament">Figmareal Tournament</span>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-hr" aria-hidden="true">
+        <div class="rights">
+          <p>© 2025, Figma Games, Inc. Todos los derechos reservados. FigmaGamer, Figma Games, el logotipo de Figma Games, son marcas comerciales o marcas registradas de Figma Games, Inc. en España y en otros lugares. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios Adri y Fer.</p>
+        </div>
+        <div class="footer-container footer-bottom" role="navigation" aria-label="Enlaces legales">
+          <div class="footer-1 footer-bottom-links">
+            <span class="fs-6" aria-label="Terms of Service">Terms of Service</span>
+            <span class="fs-6" aria-label="Privacy Policy">Privacy Policy</span>
+            <span class="fs-6" aria-label="Store Refund Policy">Store Refund Policy</span>
+          </div>
+          <div class="footer-2 footer-bottom-icons">
+            <i title="Epic Games" class="text-color-nonactive eg-footer-icon-eg" role="img" aria-label="Epic Games"></i>
+            <i title="Unreal Engine" class="text-color-nonactive eg-footer-icon-ue" role="img" aria-label="Unreal Engine"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

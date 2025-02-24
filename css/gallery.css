@@ -1,319 +1,393 @@
+/* Regla global para definir variables en :root */
 :root {
-    --primary-color: #1f1f1f;       /* Gris muy oscuro */
-    --secondary-color: #333333;     /* Gris oscuro */
-    --accent-color: #444444;        /* Gris ligeramente más claro para acentos */
-    --background-color: #0D1117 ;    /* Fondo casi negro */
-    --surface-color: #161B22;       /* Superficie: ligeramente más claro que el background */
-    --text-primary: #e0e0e0;        /* Texto principal en tono claro */
-    --text-secondary: #aaaaaa;      /* Texto secundario */
-    --info-color: #bb86fc;          /* Púrpura para información */
+  --primary-color: #1f1f1f;
+  /* Gris muy oscuro */
+  --secondary-color: #333333;
+  /* Gris oscuro */
+  --accent-color: #444444;
+  /* Gris ligeramente más claro para acentos */
+  --background-color: #0D1117;
+  /* Fondo casi negro */
+  --surface-color: #161B22;
+  /* Superficie: ligeramente más claro que el background */
+  --text-primary: #e0e0e0;
+  /* Texto principal en tono claro */
+  --text-secondary: #aaaaaa;
+  /* Texto secundario */
+  --info-color: #bb86fc;
+  /* Púrpura para información */
 }
 
+/* Regla para el fondo del body */
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
+/* Regla para quitar la decoración de enlaces */
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+/* Regla para que todas las imágenes en el body muestren cursor pointer */
+body img {
+  cursor: pointer !important;
+}
+
+/* Regla para centrar y quitar lista en elementos <li> del menú de navegación */
+nav div ul li {
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Comentario: Estilos del header (sección superior de la página) */
+
+/* Regla para la línea separadora en el header */
+.separator {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  border: none;
+}
+
+/* Regla para cambiar el fondo y color al pasar el cursor sobre elementos del dropdown */
+.dropdown-item:hover {
+  background-color: #6c757d !important;
+  /* Gris de Bootstrap */
+  color: white !important;
+}
+
+/* Regla para definir el padding y visualización de enlaces dentro del dropdown */
+.dropdown-menu li a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Regla para el contenedor custom de navegación (customnav) */
+.customnav {
+  position: relative;
+  z-index: 1;
+}
+
+/* Regla para la barra de navegación principal (navbar) */
+.navbar {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  background-color: #2A2A2A;
+  color: #fff;
+  width: 100%;
+}
+
+/* Regla para el contenedor de navegación secundario (nav) */
+.nav {
+  width: 100vw;
+  display: flex;
+  background-color: #121212;
+  height: 5%;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+/* Regla para el contenedor del campo de búsqueda */
+.input-container {
+  position: relative;
+  left: 10vw;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  height: 40px;
+}
+
+/* Regla para los íconos dentro del contenedor de navegación */
+.nav i {
+  position: relative;
+  left: 25px;
+  bottom: 1px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #CCCCCC;
+  font-size: 12.75px;
+  font-weight: 12.75;
+  padding: 0;
+  align-items: center;
+}
+
+/* Regla para el campo de entrada (input) de búsqueda */
+.input {
+  border-radius: 20px;
+  border: none;
+  padding-left: 40px;
+  background-color: #202020;
+  color: #CCCCCC;
+  outline: none;
+  min-width: 14vw;
+  max-width: 16vw;
+}
+
+/* Regla para el contenido con clase dsc (descripción) */
+.dsc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+  color: #CCCCCC;
+}
+
+/* Regla para el contenedor secundario abc */
+.abc {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 13.5vw;
+  margin: 30px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5F5;
+  width: 59.08px;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+/* Regla para cambiar el color al pasar el cursor sobre el elemento dsc */
+.dsc:hover {
+  color: #F5F5F5;
+}
+
+/* Regla para elementos con la clase navbar.bg-dark */
+.navbar.bg-dark {
+  position: relative;
+}
+
+/* Regla para la tarjeta de género (genre-card) */
+.genre-card {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  width: 18rem;
+}
+
+/* Regla para las imágenes dentro de la tarjeta de género */
+.genre-card img {
+  cursor: pointer;
+  max-width: 100%;
+  height: 9.375rem;
+  object-fit: contain;
+  padding-top: 5%;
+  border-radius: 0.5rem !important;
+}
+
+body h6 {
+  color: white;
+}
+.card-body p {
+  color: white;
+}
+
+/* Regla para el título en la tarjeta de género */
+.genre-title {
+  padding: 0.5rem 0;
+}
+
+/* Regla para los indicadores del carrusel */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--text-primary);
+}
+
+/* Regla @media para pantallas con ancho máximo de 991.98px */
+@media (max-width: 991.98px) {
+
+  /* Regla para el contenedor #searchCollapse en pantallas pequeñas */
+  #searchCollapse {
+    position: absolute;
+    top: 100%;
+    /* Debajo del navbar */
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    z-index: 1050;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid var(--accent-color);
   }
-  body img{
-    cursor: pointer !important;
-  }
-  
-  nav div ul li {
-    list-style: none;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  
-  /* Estilos del header */
-  
-  /* Estilo para la línea separadora */
-  .separator {
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin: 8px 0;
-    border: none;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #6c757d !important;
-    /* Gris de Bootstrap */
-    color: white !important;
-  }
-  
-  /* Estilo para los enlaces */
-  .dropdown-menu li a {
-    padding: 10px 15px;
-    display: block;
-  
-  }
-  
+}
+
+/* Regla para eliminar margen en el navbar dentro del #searchCollapse */
+#searchCollapse .navbar-nav {
+  margin-left: 0 !important;
+}
+
+/* Regla para la tarjeta de juego (game-card) */
+.game-card {
+  background-color: var(--surface-color);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Regla para las imágenes dentro de la tarjeta de juego */
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Regla para el cuerpo de la tarjeta de juego */
+.game-card .card-body {
+  padding: 15px;
+}
+
+/* Regla para el estilo personalizado de las etiquetas (badge-custom) */
+.badge-custom {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Regla para resaltar etiquetas (badge-highlight) */
+.badge-highlight {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Regla para el contenedor de filtros */
+.filters {
+  background-color: #2c3034;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Regla para el encabezado (h5) dentro del contenedor de filtros */
+.filters h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Regla para los enlaces dentro del contenedor de filtros */
+.filters a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Regla para el pie de página */
+footer {
+  background-color: #202020;
+  height: 100%;
+}
+
+/* Regla para la primera sección del pie de página (.footer-1) */
+.footer-1 {
+  font-size: 32px;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* Regla para el contenedor general del pie de página (.footer-container) */
+.footer-container {
+  padding-top: 2%;
+  font-size: 32px;
+  color: #CCCCCC;
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Regla para el contenedor de texto del pie de página (.text-container) */
+.text-container {
+  font-size: 13px;
+  width: 90vw;
+  color: #CCCCCC;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+/* Regla para el contenedor de descripción en el pie (.dsc-container) */
+.dsc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding-bottom: 2.5%;
+}
+
+/* Regla para la columna de contenido en el pie (.columnc) */
+.columnc {
+  font-size: 13px;
+  color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Regla para el espaciado interno de cada elemento span dentro de .columnc */
+.columnc span {
+  padding-bottom: 7%;
+}
+
+/* Regla para la sección de derechos de autor (.rights) */
+.rights {
+  padding-top: 3%;
+  font-size: 11.36px;
+  width: 45vw;
+  line-height: 25px;
+}
+
+/* Regla para cambiar el color de span en el footer al pasar el cursor */
+footer span:hover {
+  color: #0078E5;
+  transition: 0.1s ease;
+}
+
+/* Regla para el contenedor inferior del pie (.footer-bottom) */
+.footer-bottom {
+  padding-top: 2%;
+}
+
+/* Regla para los enlaces en la parte inferior del pie (.footer-bottom-links) */
+.footer-bottom-links {
+  display: flex;
+  gap: 2%;
+}
+
+/* Regla para los íconos en la parte inferior del pie (.footer-bottom-icons) */
+.footer-bottom-icons {
+  display: flex;
+  gap: 2%;
+}
+
+/* Regla @media para pantallas con un ancho máximo de 1000px */
+@media screen and (max-width: 1000px) {
+
+  /* Regla para modificar el contenedor customnav en pantallas pequeñas */
   .customnav {
     position: relative;
     z-index: 1;
-  }
-  
-  .navbar {
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    background-color: #2A2A2A;
-    color: #fff;
-    width: 100%;
-  }
-  
-  .nav {
-    width: 100vw;
-    display: flex;
     background-color: #121212;
-    height: 5%;
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-  }
-  
-  .input-container {
-    position: relative;
-    left: 10vw;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    height: 40px;
-  }
-  
-  .nav i {
-    position: relative;
-    left: 25px;
-    bottom: 1px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #CCCCCC;
-    font-size: 12.75px;
-    font-weight: 12.75;
-    padding: 0;
-    align-items: center;
-  }
-  
-  .input {
-    border-radius: 20px;
-    border: none;
-    padding-left: 40px;
-    background-color: #202020;
-    color: #CCCCCC;
-    outline: none;
-    min-width: 14vw;
-    max-width: 16vw;
-  }
-  
-  .dsc {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-right: 30px;
-    color: #CCCCCC;
-  }
-  
-  .abc {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    left: 13.5vw;
-    margin: 30px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    color: #F5F5F5;
-    width: 59.08px;
-    font-size: 14px;
-    cursor: pointer;
-    padding-left: 30px;
-  }
-  
-  .dsc:hover {
-    color: #F5F5F5;
   }
 
-.navbar.bg-dark {
-    position: relative;
-}
-
-.genre-card {
-    background-color: var(--surface-color);
-    color: var(--text-primary);
-    border-radius: 1rem;
-    text-align: center;
-    overflow: hidden;
-    width: 18rem;
-}
-
-.genre-card img {
-    cursor: pointer;
-    max-width: 100%;
-    height: 9.375rem;
-    object-fit: contain;
-    padding-top: 5%;
-    border-radius: 0.5rem !important;
-
-}
-
-.genre-title {
-    padding: 0.5rem 0;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: var(--text-primary);
-}
-
-@media (max-width: 991.98px) {
-    #searchCollapse {
-        position: absolute;
-        top: 100%; /* Debajo del navbar */
-        right: 0;
-        left: 0;
-        background-color: var(--secondary-color);
-        z-index: 1050;
-        padding: 0.5rem 1rem;
-        border-top: 1px solid var(--accent-color);
-    }
-}
-
-#searchCollapse .navbar-nav {
-    margin-left: 0 !important;
-}
-.game-card {
-    background-color: var(--surface-color);
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: left;
-    margin-bottom: 20px;
+  /* Regla para eliminar márgenes en elementos con clase ph */
+  .ph {
+    margin: 0;
   }
-  .game-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-  }
-  .game-card .card-body {
-    padding: 15px;
-  }
-  .badge-custom {
-    background-color: #343a40;
-    color: #fff;
-    border-radius: 0.5rem;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
-  }
-  .badge-highlight {
-    background-color: #ffc107;
-    color: #000;
-  }
-  .filters {
-    background-color: #2c3034;
-    border-radius: 10px;
-    padding: 15px;
-  }
-  .filters h5 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  .filters a {
-    color: #0d6efd;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  footer {
-    background-color: #202020;
-    height: 100%;
-  }
-  
-  .footer-1 {
-    font-size: 32px;
-    color: #CCCCCC;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1%;
-    width: 90vw;
-    margin: 0 auto;
-  }
-  
-  .footer-container {
-    padding-top: 2%;
-    font-size: 32px;
-    color: #CCCCCC;
-    margin: 0 auto;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .text-container {
-    font-size: 13px;
-    width: 90vw;
-    color: #CCCCCC;
-    margin: 0 auto;
-    padding-top: 2%;
-  }
-  
-  .dsc-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    padding-bottom: 2.5%;
-  }
-  
-  .columnc {
-    font-size: 13px;
-    color: #e7e7e7;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .columnc span {
-    padding-bottom: 7%;
-  }
-  
-  .rights {
-    padding-top: 3%;
-    font-size: 11.36px;
-    width: 45vw;
-    line-height: 25px;
-  }
-  
-  footer span:hover {
-    color: #0078E5;
-    transition: 0.1s ease;
-  }
-  
-  .footer-bottom {
-    padding-top: 2%;
-  }
-  
-  .footer-bottom-links {
-    display: flex;
-    gap: 2%;
-  }
-  
-  .footer-bottom-icons {
-    display: flex;
-    gap: 2%;
-  }
-  @media screen and (max-width: 1000px) {
-    .customnav {
-      position: relative;
-      z-index: 1;
-      background-color: #121212;
-    }
-    .ph {
-      margin: 0;
-    }
 }

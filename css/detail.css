@@ -1,334 +1,410 @@
+/* Regla para las variables globales definidas en :root */
 :root {
-    --primary-color: #1f1f1f;       /* Gris muy oscuro */
-    --secondary-color: #333333;     /* Gris oscuro */
-    --accent-color: #444444;        /* Gris ligeramente más claro para acentos */
-    --background-color: #0D1117;    /* Fondo casi negro */
-    --surface-color: #181818;       /* Superficie: ligeramente más claro que el background */
-    --text-primary: #e0e0e0;        /* Texto principal en tono claro */
-    --text-secondary: #aaaaaa;      /* Texto secundario */
-    --info-color: #bb86fc;          /* Púrpura para información */
+  --primary-color: #1f1f1f; /* Gris muy oscuro */
+  --secondary-color: #333333; /* Gris oscuro */
+  --accent-color: #444444; /* Gris ligeramente más claro para acentos */
+  --background-color: #0D1117; /* Fondo casi negro */
+  --surface-color: #181818; /* Superficie: ligeramente más claro que el background */
+  --text-primary: #e0e0e0; /* Texto principal en tono claro */
+  --text-secondary: #aaaaaa; /* Texto secundario */
+  --info-color: #bb86fc; /* Púrpura para información */
 }
 
+/* Regla para el cuerpo de la página */
 body {
-    background-color: var(--background-color);
-    color: white !important;
+  background-color: var(--background-color);
+  color: white !important;
 }
-body img{
+
+/* Regla para las imágenes dentro del body */
+body img {
   cursor: pointer !important;
 }
+
+/* Regla para el elemento de navegación global */
 nav {
-    background-color: var(--secondary-color);
-    color: var(--text-primary);
-    padding: 10px;
-    text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  padding: 0.625rem;
+  text-align: center;
 }
 
+/* Regla específica para la barra de navegación con clase bg-dark */
 .navbar.bg-dark {
-    position: relative;
+  position: relative;
 }
+
+/* Regla para el título del juego */
 .game-title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
+/* Regla para el botón amarillo */
 .yellow-button {
-    background-color: #ffc107;
-    color: black;
+  background-color: #ffc107;
+  color: black;
 }
+
+/* Regla para la imagen del juego */
 .game-image {
-    max-height: 350px;
-    object-fit: cover;
+  max-height: 21.875rem;
+  object-fit: cover;
 }
+
+/* Regla para la sección de pestañas resumen */
 .summary-tabs {
-    border-bottom: 1px solid gray;
+  border-bottom: 0.0625rem solid gray;
 }
+
+/* Regla para los enlaces que actúan como pestañas */
 .tab-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 0.625rem;
 }
+
+/* Regla para el enlace pestaña activo */
 .tab-link.active {
-    border-bottom: 3px solid #ffc107;
+  border-bottom: 0.1875rem solid #ffc107;
 }
+
+/* Regla para la sección de logros */
 .achievements-section {
-    padding: 40px 0;
-  }
-  .achievements-section h2 {
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  .achievement-card {
-    background-color: #1c1f25; /* Color de fondo de la card (opcional) */
-    border: none;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.2s;
-  }
-  .achievement-card:hover {
-    transform: scale(1.05);
-  }
-  .achievement-card img {
-    width: 80px;   /* Ajusta según tu preferencia */
-    height: auto;
-    display: block;
-    margin: 0 auto 15px auto;
-  }
-  .achievement-card-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
-  .achievement-card-exp {
-    font-size: 0.9rem;
-    color: #cfcfcf; /* Un gris claro para diferenciar */
-  }
-  .requirements-section {
-    padding: 40px 0;
-  }
-  .requirements-section h1 {
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
-  .requirements-section h2 {
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  .requirements-section h3 {
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .req-box {
-    background-color: #1c1f25; /* Un color gris oscuro para el recuadro */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  .req-box ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .req-box ul li {
-    margin-bottom: 8px;
-  }
-  .subtitle {
-    color: #cfcfcf; /* Un gris claro para subtítulos o textos complementarios */
-    font-size: 0.95rem;
-  }
+  padding: 2.5rem 0;
+}
 
+/* Regla para el encabezado de la sección de logros */
+.achievements-section h2 {
+  margin-bottom: 1.875rem;
+  font-weight: bold;
+}
 
-  footer {
-    background-color: #202020;
-    height: 100%;
-  }
-  
-  .footer-1 {
-    font-size: 32px;
-    color: #CCCCCC;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1%;
-    width: 90vw;
-    margin: 0 auto;
-  }
-  
-  .footer-container {
-    padding-top: 2%;
-    font-size: 32px;
-    color: #CCCCCC;
-    margin: 0 auto;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .text-container {
-    font-size: 13px;
-    width: 90vw;
-    color: #CCCCCC;
-    margin: 0 auto;
-    padding-top: 2%;
-  }
-  
-  .dsc-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    padding-bottom: 2.5%;
-  }
-  
-  .columnc {
-    font-size: 13px;
-    color: #e7e7e7;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .columnc span {
-    padding-bottom: 7%;
-  }
-  
-  .rights {
-    padding-top: 3%;
-    font-size: 11.36px;
-    width: 45vw;
-    line-height: 25px;
-  }
-  
-  footer span:hover {
-    color: #0078E5;
-    transition: 0.1s ease;
-  }
-  
-  .footer-bottom {
-    padding-top: 2%;
-  }
-  
-  .footer-bottom-links {
-    display: flex;
-    gap: 2%;
-  }
-  
-  .footer-bottom-icons {
-    display: flex;
-    gap: 2%;
-  }
-  @media screen and (max-width: 1000px) {
-    .customnav {
-      position: relative;
-      z-index: 1;
-      background-color: #121212;
-    }
-    .ph {
-      margin: 0;
-    }
-  }
-  a {
-    text-decoration: none !important;
-  }
-  
-  nav div ul li {
-    list-style: none;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  
-  /* Estilos del header */
-  
-  /* Estilo para la línea separadora */
-  .separator {
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin: 8px 0;
-    border: none;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #6c757d !important;
-    /* Gris de Bootstrap */
-    color: white !important;
-  }
-  
-  /* Estilo para los enlaces */
-  .dropdown-menu li a {
-    padding: 10px 15px;
-    display: block;
-  
-  }
-  
+/* Regla para la tarjeta de logro */
+.achievement-card {
+  background-color: #1c1f25;
+  border: none;
+  text-align: center;
+  padding: 1.25rem;
+  transition: transform 0.2s;
+}
+
+/* Regla para animar la tarjeta de logro al pasar el cursor */
+.achievement-card:hover {
+  transform: scale(1.05);
+}
+
+/* Regla para la imagen dentro de la tarjeta de logro */
+.achievement-card img {
+  width: 5rem;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.9375rem auto;
+}
+
+/* Regla para el título de la tarjeta de logro */
+.achievement-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3125rem;
+}
+
+/* Regla para la experiencia mostrada en la tarjeta de logro */
+.achievement-card-exp {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+/* Regla para la sección de requisitos del sistema */
+.requirements-section {
+  padding: 2.5rem 0;
+}
+
+/* Regla para el encabezado principal de requisitos */
+.requirements-section h1 {
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+/* Regla para el encabezado secundario de requisitos */
+.requirements-section h2 {
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+/* Regla para el encabezado terciario de requisitos */
+.requirements-section h3 {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
+
+/* Regla para el recuadro de requisitos (req-box) */
+.req-box {
+  background-color: #1c1f25;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* Regla para los elementos de lista dentro de req-box */
+.req-box ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Regla para el subtítulo */
+.subtitle {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+}
+
+/* Regla para el pie de página */
+footer {
+  background-color: #202020;
+  height: 100%;
+}
+
+/* Regla para la primera parte del pie de página */
+.footer-1 {
+  font-size: 2rem;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* Regla para el contenedor principal del pie de página */
+.footer-container {
+  padding-top: 2%;
+  font-size: 2rem;
+  color: #CCCCCC;
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Regla para el contenedor de texto en el pie de página */
+.text-container {
+  font-size: 0.8125rem;
+  color: #CCCCCC;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+/* Regla para el contenedor de descripción (dsc-container) en el pie */
+.dsc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding-bottom: 2.5%;
+}
+
+/* Regla para las columnas de contenido en el pie de página */
+.columnc {
+  font-size: 0.8125rem;
+  color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Regla para el espaciado interno de cada columna */
+.columnc span {
+  padding-bottom: 7%;
+}
+
+/* Regla para los derechos de autor en el pie de página */
+.rights {
+  padding-top: 3%;
+  font-size: 0.71rem; /* aprox. 11.36px */
+  width: 45vw;
+  line-height: 1.5625rem; /* aprox. 25px */
+}
+
+/* Regla para cambiar el color de los span en el pie de página al pasar el cursor */
+footer span:hover {
+  color: #0078E5;
+  transition: 0.1s ease;
+}
+
+/* Regla para el contenedor inferior del pie de página */
+.footer-bottom {
+  padding-top: 2%;
+}
+
+/* Regla para los enlaces en la parte inferior del pie de página */
+.footer-bottom-links {
+  display: flex;
+  gap: 2%;
+}
+
+/* Regla para los iconos en la parte inferior del pie de página */
+.footer-bottom-icons {
+  display: flex;
+  gap: 2%;
+}
+
+/* Regla para pantallas con un ancho máximo de 62.5rem (1000px) */
+@media screen and (max-width: 62.5rem) {
+  /* Regla para el navbar custom nav en dispositivos pequeños */
   .customnav {
     position: relative;
     z-index: 1;
-  }
-  
-  .navbar {
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    background-color: #2A2A2A;
-    color: #fff;
-    width: 100%;
-  }
-  
-  .nav {
-    width: 100vw;
-    display: flex;
     background-color: #121212;
-    height: 5%;
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-  }
-  
-  .input-container {
-    position: relative;
-    left: 10vw;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    height: 40px;
-  }
-  
-  .nav i {
-    position: relative;
-    left: 25px;
-    bottom: 1px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #CCCCCC;
-    font-size: 12.75px;
-    font-weight: 12.75;
-    padding: 0;
-    align-items: center;
-  }
-  
-  .input {
-    border-radius: 20px;
-    border: none;
-    padding-left: 40px;
-    background-color: #202020;
-    color: #CCCCCC;
-    outline: none;
-    min-width: 14vw;
-    max-width: 16vw;
-  }
-  
-  .dsc {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-right: 30px;
-    color: #CCCCCC;
-  }
-  
-  .abc {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    left: 13.5vw;
-    margin: 30px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    color: #F5F5F5;
-    width: 59.08px;
-    font-size: 14px;
-    cursor: pointer;
-    padding-left: 30px;
-  }
-  
-  .dsc:hover {
-    color: #F5F5F5;
   }
 
+  /* Regla para corregir márgenes de elementos con clase "ph" */
+  .ph {
+    margin: 0;
+  }
+}
+
+/* Regla para eliminar decoraciones de enlace */
+a {
+  text-decoration: none !important;
+}
+
+/* Regla para los elementos de lista dentro de los menúes de navegación */
+nav div ul li {
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Regla para el separador en el header */
+.separator {
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  border: none;
+}
+
+/* Regla para cambiar el color del ítem de dropdown al pasar el cursor */
+.dropdown-item:hover {
+  background-color: #6c757d !important;
+  color: white !important;
+}
+
+/* Regla para los enlaces dentro del menú desplegable */
+.dropdown-menu li a {
+  padding: 0.625rem 0.9375rem;
+  display: block;
+}
+
+/* Regla para el contenedor custom de navegación */
+.customnav {
+  position: relative;
+  z-index: 1;
+}
+
+/* Regla para la barra de navegación principal */
+.navbar {
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  background-color: #2A2A2A;
+  color: #fff;
+  width: 100%;
+}
+
+/* Regla para el contenedor de navegación secundario */
+.nav {
+  width: 100vw;
+  display: flex;
+  background-color: #121212;
+  height: 5%;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+/* Regla para el contenedor del campo de búsqueda */
+.input-container {
+  position: relative;
+  left: 10vw;
+  display: flex;
+  justify-content: center;
+  margin: 1.875rem;
+  height: 2.5rem;
+}
+
+/* Regla para los íconos dentro del contenedor de navegación */
+.nav i {
+  position: relative;
+  left: 1.5625rem;
+  bottom: 0.0625rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #CCCCCC;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0;
+  align-items: center;
+}
+
+/* Regla para el campo de entrada (input) de búsqueda */
+.input {
+  border-radius: 1.25rem;
+  border: none;
+  padding-left: 2.5rem;
+  background-color: #202020;
+  color: #CCCCCC;
+  outline: none;
+  min-width: 14vw;
+  max-width: 16vw;
+}
+
+/* Regla para el contenido con clase dsc */
+.dsc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-right: 1.875rem;
+  color: #CCCCCC;
+}
+
+/* Regla para el contenedor secundario abc */
+.abc {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 13.5vw;
+  margin: 1.875rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5F5;
+  width: 3.69rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding-left: 1.875rem;
+}
+
+/* Regla para mantener el color al pasar el cursor sobre dsc */
+.dsc:hover {
+  color: #F5F5F5;
+}
+
+/* Regla reiterada para el navbar con bg-dark (se mantiene relativo) */
 .navbar.bg-dark {
-    position: relative;
+  position: relative;
+}
+
+/* Regla para ajustar el tamaño del ícono de trofeo */
+.trophyimg {
+  width: 1rem !important;
+  height: auto !important;
+  margin-right: 0.25rem !important;
 }

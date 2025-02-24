@@ -132,3 +132,6 @@ footer {
     display: flex;
     gap: 2%;
   }
+  footer{
+    cursor: pointer;
+  }

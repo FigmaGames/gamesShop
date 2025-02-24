@@ -732,3 +732,6 @@ footer span:hover {
 .descrip {
   font-size: 15px;
 }
+footer{
+  cursor: pointer;
+}

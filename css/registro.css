@@ -3,40 +3,40 @@ body {
     color: #ffffff !important; 
 }
 body #cardfp{
-  margin: 157px !important;
+  margin: 9.81rem !important;
 }
 #maxwith{
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 .form-container {
-    max-width: 350px; 
-    margin: 100px auto;
-    padding: 15px;
+    max-width: 21.88rem; 
+    margin: 6.25rem auto;
+    padding: 0.94rem;
     background: #000000cc;
-    border-radius: 10px;
+    border-radius: 0.63rem;
 }
 
 form input, form button {
-    font-size: 14px; 
-    padding: 8px; 
+    font-size: 0.88rem; 
+    padding: 0.5rem; 
 }
 
 form button {
     width: 100%;
-    padding: 10px;
+    padding: 0.63rem;
 }
-/* Header */
+
 .separator {
-  height: 1px;
+  height: 0.06rem;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 8px 0; 
+  margin: 0.5rem 0; 
   border: none; 
- }
- .dropdown-item:hover {
+}
+.dropdown-item:hover {
   background-color: #6c757d !important;
   color: white !important;
 }
-/* Formulario */
+
 .card {
     background-color: #161B22; 
     border: none;
@@ -62,7 +62,7 @@ form button {
 }
 .form-control {
     background-color: #adadad;
-    border: 1px solid #4a5568; 
+    border: 0.06rem solid #4a5568; 
     color: #ffffff; 
 }
 .form-control:focus {
@@ -76,14 +76,13 @@ form button {
 .form-label{
   color: white;
 }
-/* Footer styles */
+
 footer {
     background-color: #202020;
     height: 100%;
-  }
-  
-  .footer-1 {
-    font-size: 32px;
+}
+.footer-1 {
+    font-size: 2rem;
     color: #CCCCCC;
     display: flex;
     flex-direction: row;
@@ -91,70 +90,60 @@ footer {
     gap: 1%;
     width: 90vw;
     margin: 0 auto;
-  }
-  
-  .footer-container {
+}
+.footer-container {
     padding-top: 2%;
-    font-size: 32px;
+    font-size: 2rem;
     color: #CCCCCC;
     margin: 0 auto;
     width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  
-  .text-container {
-    font-size: 13px;
+}
+.text-container {
+    font-size: 0.81rem;
     width: 90vw;
     color: #CCCCCC;
     margin: 0 auto;
     padding-top: 2%;
-  }
-  
-  .dsc-container {
+}
+.dsc-container {
     display: flex;
     flex-direction: row;
     gap: 2%;
     padding-bottom: 2.5%;
-  }
-  
-  .columnc {
-    font-size: 13px;
+}
+.columnc {
+    font-size: 0.81rem;
     color: #e7e7e7;
     display: flex;
     flex-direction: column;
-  }
-  
-  .columnc span {
+}
+.columnc span {
     padding-bottom: 7%;
-  }
-  
-  .rights {
+}
+.rights {
     padding-top: 3%;
-    font-size: 11.36px;
+    font-size: 0.71rem;
     width: 45vw;
-    line-height: 25px;
-  }
-  
-  footer span:hover {
+    line-height: 1.56rem;
+}
+footer span:hover {
     color: #0078E5;
     transition: 0.1s ease;
-  }
-  
-  .footer-bottom {
+}
+.footer-bottom {
     padding-top: 2%;
-  }
-  
-  .footer-bottom-links {
+}
+.footer-bottom-links {
     display: flex;
     gap: 2%;
-  }
-  
-  .footer-bottom-icons {
+}
+.footer-bottom-icons {
     display: flex;
     gap: 2%;
-  }
-  footer{
+}
+footer{
     cursor: pointer;
-  }
+}

@@ -59,5 +59,3 @@ El proyecto deberá incluir:
 2. **En Moodle** (solo un miembro del equipo):
    - Documentación en PDF.
    - Enlace al repositorio de GitHub.
-
-## Estructura del Proyecto

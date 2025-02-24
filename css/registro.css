@@ -9,16 +9,16 @@ body #cardfp{
   max-width: 500px;
 }
 .form-container {
-    max-width: 350px; /* Reduce el ancho */
-    margin: 100px auto; /* Centrado con espacio */
+    max-width: 350px; 
+    margin: 100px auto;
     padding: 15px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
 
 form input, form button {
-    font-size: 14px; /* Reduce el tamaño del texto */
-    padding: 8px; /* Reduce el padding */
+    font-size: 14px; 
+    padding: 8px; 
 }
 
 form button {

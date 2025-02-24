@@ -12,7 +12,7 @@ body #cardfp{
     max-width: 350px; 
     margin: 100px auto;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
+    background: #000000cc;
     border-radius: 10px;
 }
 

@@ -1,13 +1,20 @@
+/* Establece el color de fondo y el color de texto para todo el body */
 body {
     background-color: #0D1117; 
     color: #ffffff !important; 
 }
+
+/* Aplica un margen alto al elemento con id cardfp dentro del body */
 body #cardfp{
   margin: 9.81rem !important;
 }
+
+/* Define el ancho máximo para el elemento con id maxwith */
 #maxwith{
   max-width: 31.25rem;
 }
+
+/* Estilos para el contenedor del formulario */
 .form-container {
     max-width: 21.88rem; 
     margin: 6.25rem auto;
@@ -16,71 +23,98 @@ body #cardfp{
     border-radius: 0.63rem;
 }
 
+/* Estilos para los inputs y botones dentro de un formulario */
 form input, form button {
     font-size: 0.88rem; 
     padding: 0.5rem; 
 }
 
+/* Estilos específicos para el botón del formulario */
 form button {
     width: 100%;
     padding: 0.63rem;
 }
 
+/* Estilos para una línea separadora */
 .separator {
   height: 0.06rem;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 0.5rem 0; 
   border: none; 
 }
+
+/* Estilos para los elementos del menú desplegable al pasar el ratón */
 .dropdown-item:hover {
   background-color: #6c757d !important;
   color: white !important;
 }
 
+/* Estilos para los elementos de la tarjeta */
 .card {
     background-color: #161B22; 
     border: none;
 }
+
+/* Estilos para el botón primario */
 .btn-primary {
     background-color: #2d3748; 
     border: none;
 }
+
+/* Cambios de color al pasar el ratón sobre el botón primario */
 .btn-primary:hover {
     background-color: #4a5568; 
 }
+
+/* Estilos para el botón de Google */
 .btn-google {
     background-color: #dd4b39; 
     color: #ffffff;
 }
+
+/* Estilos para el botón de Facebook */
 .btn-facebook {
     background-color: #3b5998; 
     color: #ffffff;
 }
+
+/* Estilos para el botón de Github */
 .btn-github {
     background-color: #333333; 
     color: #ffffff;
 }
+
+/* Estilos para el control del formulario */
 .form-control {
     background-color: #adadad;
     border: 0.06rem solid #4a5568; 
     color: #ffffff; 
 }
+
+/* Estilos para el control del formulario cuando está enfocado */
 .form-control:focus {
     background-color: #2d3748; 
     border-color: #667eea; 
     color: #ffffff;
 }
+
+/* Forzar que el texto centrado se muestre en blanco */
 .text-center{
   color: white;
 }
+
+/* Estilos para las etiquetas de formulario */
 .form-label{
   color: white;
 }
 
+/* Estilos para el footer */
 footer {
     background-color: #202020;
     height: 100%;
 }
+
+/* Estilos para la primera sección del footer */
 .footer-1 {
     font-size: 2rem;
     color: #CCCCCC;
@@ -91,6 +125,8 @@ footer {
     width: 90vw;
     margin: 0 auto;
 }
+
+/* Estilos para el contenedor principal del footer */
 .footer-container {
     padding-top: 2%;
     font-size: 2rem;
@@ -101,6 +137,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* Estilos para el contenedor de textos en el footer */
 .text-container {
     font-size: 0.81rem;
     width: 90vw;
@@ -108,42 +146,60 @@ footer {
     margin: 0 auto;
     padding-top: 2%;
 }
+
+/* Estilos para el contenedor de descripción del footer */
 .dsc-container {
     display: flex;
     flex-direction: row;
     gap: 2%;
     padding-bottom: 2.5%;
 }
+
+/* Estilos para las columnas de contenido en el footer */
 .columnc {
     font-size: 0.81rem;
     color: #e7e7e7;
     display: flex;
     flex-direction: column;
 }
+
+/* Espaciado inferior para cada span dentro de las columnas */
 .columnc span {
     padding-bottom: 7%;
 }
+
+/* Estilos para el texto de derechos en el footer */
 .rights {
     padding-top: 3%;
     font-size: 0.71rem;
     width: 45vw;
     line-height: 1.56rem;
 }
+
+/* Efecto hover para los spans del footer */
 footer span:hover {
     color: #0078E5;
     transition: 0.1s ease;
 }
+
+/* Estilos para la sección inferior del footer */
 .footer-bottom {
     padding-top: 2%;
 }
+
+/* Estilos para los enlaces en la sección inferior del footer */
 .footer-bottom-links {
     display: flex;
     gap: 2%;
 }
+
+/* Estilos para los íconos en la sección inferior del footer */
 .footer-bottom-icons {
     display: flex;
     gap: 2%;
 }
+
+/* Establece el cursor pointer para el footer */
 footer{
     cursor: pointer;
 }

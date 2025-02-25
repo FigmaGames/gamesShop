@@ -1,58 +1,83 @@
+/* Configuración del fondo y color de texto para el body */
 body {
   background-color: #0D1117; 
   color: #000000; 
 }
-/* Header */
+
+/* Estilos de la línea separadora en el header */
 .separator {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 8px 0; 
   border: none; 
- }
- .dropdown-item:hover {
+}
+
+/* Estilos para el efecto hover en los elementos del menú desplegable */
+.dropdown-item:hover {
   background-color: #6c757d !important;
   color: white !important;
 }
-/* Formulario */
-.text-center{
+
+/* Estilos para centrar el texto en los formularios */
+.text-center {
   color: white;
 }
+
+/* Estilos para la tarjeta (card) del formulario */
 .card {
   background-color: #161B22; 
   border: none;
 }
+
+/* Estilos para el botón primario */
 .btn-primary {
   background-color: #2d3748; 
   border: none;
 }
+
+/* Estilos para el botón primario al pasar el ratón (hover) */
 .btn-primary:hover {
   background-color: #4a5568; 
 }
+
+/* Estilos para el botón de Google */
 .btn-google {
   background-color: #dd4b39; 
   color: #ffffff;
 }
+
+/* Estilos para el botón de Facebook */
 .btn-facebook {
   background-color: #3b5998; 
   color: #ffffff;
 }
+
+/* Estilos para el botón de Github */
 .btn-github {
   background-color: #333333; 
   color: #ffffff;
 }
+
+/* Estilos para los controles del formulario (inputs) */
 .form-control {
   background-color: #adadad;
   border: 1px solid #4a5568; 
   color: #ffffff; 
 }
+
+/* Estilos para los controles del formulario cuando están enfocados */
 .form-control:focus {
   background-color: #2d3748;
   border-color: #667eea; 
   color: #ffffff;
 }
-.form-label{
+
+/* Estilos para las etiquetas de los formularios */
+.form-label {
   color: white;
 }
+
+/* Estilos para elementos visualmente ocultos */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,15 +88,19 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.divb{
+
+/* Estilos para un contenedor adicional con espacio (gap) */
+.divb {
   gap: 10px;
 }
-/* Footer styles */
+
+/* Estilos para el footer */
 footer {
   background-color: #202020;
   height: 100%;
 }
 
+/* Estilos para la primera sección del footer */
 .footer-1 {
   font-size: 32px;
   color: #CCCCCC;
@@ -83,6 +112,7 @@ footer {
   margin: 0 auto;
 }
 
+/* Estilos para el contenedor principal del footer */
 .footer-container {
   padding-top: 2%;
   font-size: 32px;
@@ -94,6 +124,7 @@ footer {
   justify-content: space-between;
 }
 
+/* Estilos para el contenedor de textos del footer */
 .text-container {
   font-size: 13px;
   width: 90vw;
@@ -102,6 +133,7 @@ footer {
   padding-top: 2%;
 }
 
+/* Estilos para el contenedor de descripción del footer */
 .dsc-container {
   display: flex;
   flex-direction: row;
@@ -109,6 +141,7 @@ footer {
   padding-bottom: 2.5%;
 }
 
+/* Estilos para las columnas de contenido del footer */
 .columnc {
   font-size: 13px;
   color: #e7e7e7;
@@ -116,10 +149,12 @@ footer {
   flex-direction: column;
 }
 
+/* Espaciado inferior para cada span dentro de las columnas del footer */
 .columnc span {
   padding-bottom: 7%;
 }
 
+/* Estilos para el texto de derechos del footer */
 .rights {
   padding-top: 3%;
   font-size: 11.36px;
@@ -127,24 +162,30 @@ footer {
   line-height: 25px;
 }
 
+/* Efecto hover en los spans del footer */
 footer span:hover {
   color: #0078E5;
   transition: 0.1s ease;
 }
 
+/* Estilos para la sección inferior del footer */
 .footer-bottom {
   padding-top: 2%;
 }
 
+/* Estilos para los enlaces en la parte inferior del footer */
 .footer-bottom-links {
   display: flex;
   gap: 2%;
 }
 
+/* Estilos para los iconos en la parte inferior del footer */
 .footer-bottom-icons {
   display: flex;
   gap: 2%;
 }
-footer{
+
+/* Establece el cursor pointer para el footer */
+footer {
   cursor: pointer;
 }

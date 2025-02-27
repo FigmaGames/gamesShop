@@ -1,19 +1,22 @@
-/* Estilos generales */
+/* Estilos generales - Reset básico para normalizar los elementos HTML */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo del cuerpo de la página - Define la fuente principal y color de fondo oscuro */
 body {
   font-family: "Open Sans", sans-serif, arial;
   background-color: #121212 !important;
 }
 
+/* Elimina el subrayado de todos los enlaces */
 a {
   text-decoration: none !important;
 }
 
+/* Estilos para los elementos de lista - Elimina marcadores y centra contenido */
 li {
   list-style: none;
   justify-content: center;
@@ -21,9 +24,7 @@ li {
   align-items: center;
 }
 
-/* Estilos del header */
-
-/* Estilo para la línea separadora */
+/* Línea separadora - Crea una línea horizontal sutil */
 .separator {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -31,32 +32,39 @@ li {
   border: none;
 }
 
+/* Estilo para los elementos del menú desplegable al pasar el cursor */
 .dropdown-item:hover {
   background-color: #6c757d !important;
   /* Gris de Bootstrap */
   color: white !important;
 }
 
-/* Estilo para los enlaces */
+/* Estilo para los enlaces dentro del menú desplegable */
 .dropdown-menu li a {
   padding: 10px 15px;
   display: block;
-
 }
+
+/* Clase para texto con efecto de brillo */
 .bta{
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   animation: brillo 1.5s infinite alternate;
 }
+
+/* Animación de brillo para clase .bta */
 @keyframes brillo {
   0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
   50% { text-shadow: 0 0 15px rgba(255, 255, 255, 1); }
   100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
 }
+
+/* Contenedor de navegación personalizado con control de capas */
 .customnav {
   position: relative;
   z-index: 1;
 }
 
+/* Barra de navegación principal - Estructura y colores */
 .navbar {
   height: 52px;
   display: flex;
@@ -68,6 +76,7 @@ li {
   width: 100%;
 }
 
+/* Navegación secundaria - Estructura y posicionamiento */
 .nav {
   width: 100vw;
   display: flex;
@@ -80,6 +89,7 @@ li {
   width: 100%;
 }
 
+/* Contenedor de entrada de búsqueda */
 .input-container {
   position: relative;
   left: 10vw;
@@ -89,6 +99,7 @@ li {
   height: 40px;
 }
 
+/* Iconos dentro de la navegación - Posicionamiento y estilos */
 .nav i {
   position: relative;
   left: 25px;
@@ -103,6 +114,7 @@ li {
   align-items: center;
 }
 
+/* Campo de entrada con bordes redondeados y estilo oscuro */
 .input {
   border-radius: 20px;
   border: none;
@@ -114,6 +126,7 @@ li {
   max-width: 16vw;
 }
 
+/* Contenedor de descripción - Posicionamiento centrado */
 .dsc {
   position: relative;
   display: flex;
@@ -122,6 +135,7 @@ li {
   color: #CCCCCC;
 }
 
+/* Contenedor de elementos de navegación secundarios */
 .abc {
   position: relative;
   display: flex;
@@ -138,11 +152,12 @@ li {
   padding-left: 30px;
 }
 
+/* Efecto hover para elementos de descripción */
 .dsc:hover {
   color: #F5F5F5;
 }
 
-/* Estilos del carrusel y contenido principal */
+/* Contenedor principal de contenido - Estructura flexible y centrada */
 .content-c {
   flex-direction: row;
   display: flex;
@@ -152,6 +167,7 @@ li {
   gap: 0px;
 }
 
+/* Estilo para elementos activos o destacados */
 .ac {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
@@ -159,6 +175,7 @@ li {
   color: #121212;
 }
 
+/* Carrusel principal - Dimensiones y bordes redondeados */
 .carousel {
   height: 100%;
   width: 79%;
@@ -166,12 +183,14 @@ li {
   overflow: hidden;
 }
 
+/* Contenedor de imágenes del carrusel - Animación de transición */
 .image-container {
   display: flex;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
 
+/* Imágenes dentro del contenedor - Ajuste para cubrir espacio */
 .image-container img {
   min-width: 100%;
   width: 100%;
@@ -179,6 +198,7 @@ li {
   object-fit: cover;
 }
 
+/* Contenido lateral - Estructura de columna y colores */
 .side-content {
   display: flex;
   color: #F5F5F5;
@@ -187,6 +207,7 @@ li {
   width: 20%;
 }
 
+/* Componentes individuales del contenido lateral */
 .side-component {
   display: inline-flex;
   border-radius: 15px;
@@ -195,23 +216,27 @@ li {
   height: 16%;
 }
 
+/* Efecto hover para componentes laterales */
 .side-component:hover {
   background-color: #CCCCCC;
   transition: all 0.3s ease;
 }
 
+/* Imágenes dentro de componentes laterales */
 .side-component img {
   border-radius: 15px;
   width: 16%;
   margin: 2vh;
 }
 
+/* Contenedor de imagen principal */
 .imgsi {
   min-width: 100%;
   height: 100%;
   position: relative;
 }
 
+/* Contenedor de imagen interna - Posicionamiento absoluto */
 .imgsin {
   display: flex;
   position: absolute;
@@ -220,12 +245,14 @@ li {
   height: 30%;
 }
 
+/* Ajustes para imágenes dentro de .imgsin */
 .imgsin img {
   object-fit: cover;
   min-width: 100%;
   height: 100%;
 }
 
+/* Descripción de imagen - Posicionamiento y estilos */
 .imgsindsc {
   position: absolute;
   display: flex;
@@ -238,10 +265,12 @@ li {
   font-size: 1.2rem;
 }
 
+/* Ajuste de tamaño para títulos en descripciones */
 .imgsindsc h1 {
   font-size: 1rem;
 }
 
+/* Contenedor de precios - Posicionamiento y estructura */
 .imgsinprice {
   position: absolute;
   display: flex;
@@ -252,6 +281,7 @@ li {
   gap: 3vh;
 }
 
+/* Enlaces dentro del contenedor de precios */
 .imgsinprice a {
   width: 80%;
   display: flex;
@@ -262,25 +292,28 @@ li {
   border-radius: 5px;
 }
 
-/* Estilos de la sección de juegos más esperados */
+/* Contenedor principal de sección Quake */
 .AllQuake {
   width: 75vw;
   margin: 0 auto;
   padding-top: 5%;
 }
 
+/* Contenedor de contenido Quake */
 .QuakeCon {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+/* Estilos para títulos en QuakeCon */
 .QuakeCon h2 a {
   color: #F5F5F5;
   cursor: pointer;
   font-size: 16px;
 }
 
+/* Botón de lista circular */
 .Qlist {
   border-radius: 50%;
   width: 30px;
@@ -292,15 +325,18 @@ li {
   cursor: pointer;
 }
 
+/* Contenedor de Qlist - Organización horizontal */
 .Qlist1 {
   display: flex;
   gap: 10px;
 }
 
+/* Contenedor de deslizamiento con desbordamiento oculto */
 .swipe-wrapper {
   overflow: hidden;
 }
 
+/* Contenedor de elementos deslizables */
 .cos {
   width: 100%;
   display: flex;
@@ -309,6 +345,7 @@ li {
   gap: 18px;
 }
 
+/* Contenido individual deslizable */
 .swipe-content {
   display: flex;
   flex-direction: column;
@@ -317,27 +354,31 @@ li {
   margin: 0 auto;
 }
 
+/* Imágenes dentro del contenido deslizable */
 .swipe-content img {
   width: 14vw;
   border-radius: 5px;
 }
 
+/* Título secundario en contenido deslizable */
 .stitle {
   color: #F5F5F599;
   font-size: 12px;
 }
 
+/* Descripción en contenido deslizable */
 .sdsc {
   font-size: 16px;
   color: #F5F5F5;
 }
 
+/* Precio en contenido deslizable */
 .sprice {
   color: #F5F5F5;
   float: right;
 }
 
-/* Estilos de la sección de juegos gratis */
+/* Contenedor de juegos gratuitos */
 .freegames-container {
   width: 75vw;
   height: 100%;
@@ -347,6 +388,7 @@ li {
   border-radius: 10px;
 }
 
+/* Barra superior de sección de juegos gratuitos */
 .freegames {
   display: flex;
   justify-content: space-between;
@@ -356,11 +398,13 @@ li {
   color: #F5F5F5;
 }
 
+/* Título de juegos gratuitos */
 .freegames h2 a {
   color: #F5F5F5;
   font-size: 22px;
 }
 
+/* Botón en sección de juegos gratuitos */
 .freegames-btn {
   display: flex;
   justify-content: center;
@@ -376,6 +420,7 @@ li {
   border-style: solid;
 }
 
+/* Contenedor de miniaturas de juegos gratuitos */
 .freegamesthumb {
   display: flex;
   flex-direction: row;
@@ -386,6 +431,7 @@ li {
   padding-bottom: 2%;
 }
 
+/* Contenido individual de miniaturas */
 .freegamesthumb-content {
   display: flex;
   flex-direction: column;
@@ -394,11 +440,12 @@ li {
   gap: 1.7vh;
 }
 
+/* Imágenes de miniaturas de juegos gratuitos */
 .freegamesthumb-content img {
   border-radius: 8px;
 }
 
-/* Estilos de la sección de juegos más vendidos y más jugados */
+/* Contenedor de secciones de juegos */
 .Games {
   display: flex;
   flex-direction: row;
@@ -412,12 +459,14 @@ li {
   cursor: pointer;
 }
 
+/* Contenedor de juegos principales */
 .top-games {
   width: 30%;
   font-size: 12px;
   height: 100%;
 }
 
+/* Elemento individual de juego */
 .game {
   display: flex;
   font-size: 10px;
@@ -427,6 +476,7 @@ li {
   padding-bottom: 2%;
 }
 
+/* Botón de juego estilizado */
 .gbutton {
   float: left;
   border: #F5F5F5;
@@ -441,10 +491,12 @@ li {
   padding: 5px;
 }
 
+/* Títulos dentro de elementos de juego */
 .game h2 a {
   color: #F5F5F5;
 }
 
+/* Contenedor de visualización de juegos */
 .games {
   display: flex;
   flex-direction: row;
@@ -452,6 +504,7 @@ li {
   padding-top: 1%;
 }
 
+/* Descripción de juegos */
 .games-dsc {
   padding-left: 4%;
   color: #F5F5F5;
@@ -461,17 +514,20 @@ li {
   gap: 1vh;
 }
 
+/* Imágenes de juegos */
 .games img {
   padding: 3%;
   border-radius: 20px;
 }
 
+/* Efecto hover para elementos de juegos */
 .games:hover {
   background-color: #F5F5F599;
   border-radius: 20px;
   transition: 0.3s ease-in;
 }
 
+/* Separador vertical */
 .kl {
   margin-top: 2px;
   margin-left: 5px;
@@ -479,12 +535,13 @@ li {
   height: 89vh;
 }
 
-/* Estilos del footer */
+/* Estilo base del pie de página */
 footer {
   background-color: #202020;
   height: 100%;
 }
 
+/* Primera sección del pie de página */
 .footer-1 {
   font-size: 32px;
   color: #CCCCCC;
@@ -496,6 +553,7 @@ footer {
   margin: 0 auto;
 }
 
+/* Contenedor principal del pie de página */
 .footer-container {
   padding-top: 2%;
   font-size: 32px;
@@ -507,6 +565,7 @@ footer {
   justify-content: space-between;
 }
 
+/* Contenedor de texto en el pie de página */
 .text-container {
   font-size: 13px;
   width: 90vw;
@@ -515,6 +574,7 @@ footer {
   padding-top: 2%;
 }
 
+/* Contenedor de descripción en pie de página */
 .dsc-container {
   display: flex;
   flex-direction: row;
@@ -522,6 +582,7 @@ footer {
   padding-bottom: 2.5%;
 }
 
+/* Columna en el pie de página */
 .columnc {
   font-size: 13px;
   color: #e7e7e7;
@@ -529,10 +590,12 @@ footer {
   flex-direction: column;
 }
 
+/* Elementos span dentro de columnas */
 .columnc span {
   padding-bottom: 7%;
 }
 
+/* Sección de derechos en el pie de página */
 .rights {
   padding-top: 3%;
   font-size: 11.36px;
@@ -540,40 +603,48 @@ footer {
   line-height: 25px;
 }
 
+/* Efecto hover para elementos span en el pie de página */
 footer span:hover {
   color: #0078E5;
   transition: 0.1s ease;
 }
 
+/* Parte inferior del pie de página */
 .footer-bottom {
   padding-top: 2%;
 }
 
+/* Enlaces en la parte inferior del pie de página */
 .footer-bottom-links {
   display: flex;
   gap: 2%;
 }
 
+/* Iconos en la parte inferior del pie de página */
 .footer-bottom-icons {
   display: flex;
   gap: 2%;
 }
 
-/* Media queries para responsive design */
+/* Media query para pantallas muy pequeñas */
 @media screen and (max-width: 468px) {
+  /* Oculta descripciones de imágenes */
   .imgsindsc {
     display: none;
   }
 
+  /* Oculta y reduce títulos */
   .imgsindsc h1 {
     display: none;
     font-size: 0.2rem;
   }
 
+  /* Elimina espaciado en contenido lateral */
   .side-content {
     gap: 0px;
   }
 
+  /* Ajusta tamaño de imágenes en componentes laterales */
   .side-component img {
     border-radius: 20px;
     width: 20%;
@@ -581,10 +652,12 @@ footer span:hover {
     font-size: 11px;
   }
 
+  /* Añade cursor pointer a elementos con clase ph */
   .ph:hover {
     cursor: pointer;
   }
 
+  /* Ajusta el contenedor principal de contenido */
   .content-c {
     display: flex;
     justify-content: space-between;
@@ -593,24 +666,30 @@ footer span:hover {
     font-size: 2px;
   }
 
+  /* Reduce tamaño de título en juegos principales */
   .top-games h2 a {
     font-size: 16px;
   }
 }
 
+/* Media query para tablets y pantallas medianas */
 @media screen and (max-width: 768px) {
+  /* Reduce tamaño de texto en descripciones */
   .imgsindsc span {
     font-size: 0.5rem;
   }
 
+  /* Reduce tamaño de títulos */
   .imgsindsc h1 {
     font-size: 0.5rem;
   }
 
+  /* Elimina espaciado en contenido lateral */
   .side-content {
     gap: 0px;
   }
 
+  /* Ajusta tamaño de imágenes en componentes laterales */
   .side-component img {
     border-radius: 20px;
     width: 20%;
@@ -618,6 +697,7 @@ footer span:hover {
     font-size: 11px;
   }
 
+  /* Ajusta el contenedor principal de contenido */
   .content-c {
     display: flex;
     justify-content: space-between;
@@ -626,102 +706,128 @@ footer span:hover {
     font-size: 2px;
   }
 
+  /* Reduce tamaño de título en juegos principales */
   .top-games h2 a {
     font-size: 16px;
   }
 
+  /* Añade padding al contenedor principal */
   .content-c {
     padding: 50px;
   }
 }
 
+/* Media query para pantallas medianas-grandes */
 @media screen and (max-width: 1000px) {
+  /* Ajusta tamaño de texto en descripciones */
   .imgsindsc span {
     font-size: 0.7rem;
   }
 
+  /* Oculta y reduce tamaño de títulos */
   .imgsindsc h1 {
     display: none;
     font-size: 0.7rem;
   }
 
+  /* Reduce tamaño de fuente en contenedor principal */
   .content-c {
     font-size: 8px;
   }
 
+  /* Reduce tamaño de título en juegos principales */
   .top-games h2 a {
     font-size: 12px;
   }
 }
 
+/* Media query para pantallas grandes */
 @media screen and (max-width: 1250px) {
+  /* Ajusta tamaño de texto en descripciones */
   .imgsindsc span {
     font-size: 0.8rem;
   }
 
+  /* Oculta y reduce tamaño de títulos */
   .imgsindsc h1 {
     display: none;
     font-size: 0.8rem;
   }
 
+  /* Reduce tamaño de fuente en contenedor principal */
   .content-c {
     font-size: 8px;
   }
 
+  /* Reduce tamaño de título en juegos principales */
   .top-games h2 a {
     font-size: 12px;
   }
 
+  /* Ajusta ancho del carrusel */
   .carousel {
     width: 100%;
   }
 
+  /* Cambia dirección de contenedor principal a columna */
   .content-c {
     flex-direction: column;
   }
 
+  /* Ajusta contenido lateral a dirección horizontal */
   .side-content {
     flex-direction: row;
     width: 100%;
   }
 }
 
+/* Media query adicional para pantallas medianas-grandes */
 @media screen and (max-width: 1000px) {
+  /* Ajusta navegación personalizada */
   .customnav {
     position: relative;
     z-index: 1;
     background-color: #121212;
   }
+  
+  /* Elimina márgenes en elementos ph */
   .ph {
     margin: 0;
   }
 
+  /* Cambia dirección de sección Games a columna */
   .Games {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Rota el separador vertical */
   .kl {
     transform: rotate(90deg);
     height: 120px;
   }
 
+  /* Reduce tamaño de texto en descripciones */
   .sdsc {
     font-size: 10px;
   }
 
+  /* Reduce tamaño de texto en precios */
   .sprice {
     font-size: 11px;
   }
 
+  /* Reposiciona contenedor de entrada */
   .input-container {
     left: 0vw;
   }
 
+  /* Oculta elementos con clase descrip */
   .descrip {
     display: none;
   }
 
+  /* Cambia elementos de juego a dirección de columna */
   .game {
     display: flex;
     flex-direction: column;
@@ -729,9 +835,12 @@ footer span:hover {
   }
 }
 
+/* Estilo de descripción general */
 .descrip {
   font-size: 15px;
 }
+
+/* Añade cursor pointer al pie de página */
 footer{
   cursor: pointer;
 }

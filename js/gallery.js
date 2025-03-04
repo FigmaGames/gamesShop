@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const cards = document.querySelectorAll("#contenedorCards .card.game-card");
-    console.log(cards);
   
     cards.forEach(card => {
       card.addEventListener("click", function () {

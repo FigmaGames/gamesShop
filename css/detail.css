@@ -53,9 +53,15 @@ nav {
 }
 
 /* Regla para el botón amarillo */
-body .yellow-button {
+.yellow-button {
   background-color: #ffc107;
   color: black !important;
+}
+
+/* Regla hover para el botón amarillo: fondo blanco y texto negro */
+.yellow-button:hover {
+  background-color: #ffffff;
+  color: #000000 !important;
 }
 a{
   text-decoration: none;
@@ -430,7 +436,7 @@ nav div ul li {
   margin-right: 0.25rem !important;
 }
 
-nav, main {
+ºnav, main {
     width: 100%;
     margin: 0;
     padding: 0;

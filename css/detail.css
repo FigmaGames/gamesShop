@@ -1,13 +1,13 @@
 /* Regla para las variables globales definidas en :root */
 :root {
-  --primary-color: #1f1f1f; /* Gris muy oscuro */
-  --secondary-color: #333333; /* Gris oscuro */
-  --accent-color: #444444; /* Gris ligeramente más claro para acentos */
-  --background-color: #0D1117; /* Fondo casi negro */
-  --surface-color: #181818; /* Superficie: ligeramente más claro que el background */
-  --text-primary: #e0e0e0; /* Texto principal en tono claro */
-  --text-secondary: #aaaaaa; /* Texto secundario */
-  --info-color: #bb86fc; /* Púrpura para información */
+  --primary-color: #1f1f1f; 
+  --secondary-color: #333333; 
+  --accent-color: #444444; 
+  --background-color: #0D1117;
+  --surface-color: #181818;
+  --text-primary: #e0e0e0; 
+  --text-secondary: #aaaaaa;
+  --info-color: #bb86fc; 
 }
 
 /* Evita el scroll horizontal y asegura que html y body ocupen el 100% del ancho */

@@ -1,21 +1,13 @@
 /* Regla global para definir variables en :root */
 :root {
   --primary-color: #1f1f1f;
-  /* Gris muy oscuro */
   --secondary-color: #333333;
-  /* Gris oscuro */
   --accent-color: #444444;
-  /* Gris ligeramente más claro para acentos */
   --background-color: #0D1117;
-  /* Fondo casi negro */
   --surface-color: #161B22;
-  /* Superficie: ligeramente más claro que el background */
   --text-primary: #e0e0e0;
-  /* Texto principal en tono claro */
   --text-secondary: #aaaaaa;
-  /* Texto secundario */
   --info-color: #bb86fc;
-  /* Púrpura para información */
 }
 
 /* Regla para el fondo del body */

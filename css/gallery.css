@@ -20,7 +20,8 @@
 
 /* Regla para el fondo del body */
 body {
-  background-color: var(--background-color);
+  font-family: "Open Sans", sans-serif, arial;
+  background-color: #121212 !important;
 }
 
 /* Regla para quitar la decoración de enlaces */
@@ -81,7 +82,10 @@ nav div ul li {
   color: #fff;
   width: 100%;
 }
-
+.bta{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: brillo 1.5s infinite alternate;
+}
 /* Regla para el contenedor de navegación secundario (nav) */
 .nav {
   width: 100vw;
@@ -191,6 +195,7 @@ nav div ul li {
 body h6 {
   color: white;
 }
+
 .card-body p {
   color: white;
 }

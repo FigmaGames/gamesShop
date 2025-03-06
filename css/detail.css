@@ -41,9 +41,13 @@ nav {
 }
 
 /* Regla para el botón amarillo */
-.yellow-button {
+body .yellow-button {
   background-color: #ffc107;
-  color: black;
+  color: black !important;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
 
 /* Regla para la imagen del juego */

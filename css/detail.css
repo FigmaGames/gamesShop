@@ -183,99 +183,95 @@ a{
   font-size: 0.95rem;
 }
 
-/* Regla para el pie de página */
+/* Estilos para el pie de página */
 footer {
-  background-color: #202020;
-  width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  background-color: #202020; 
+  height: 100%; 
 }
 
-/* Regla para la primera parte del pie de página */
+/* Estilos para la primera sección del pie de página */
 .footer-1 {
-  font-size: 2rem;
-  color: #CCCCCC;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1%;
-  width: 90vw;
-  margin: 0 auto;
+  font-size: 2rem; 
+  color: #CCCCCC; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 1%; 
+  width: 90vw; 
+  margin: 0 auto; 
 }
 
-/* Regla para el contenedor principal del pie de página */
+/* Estilos para el contenedor principal del pie de página */
 .footer-container {
-  width: 100%;
   padding-top: 2%;
   font-size: 2rem;
-  color: #CCCCCC;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
+  color: #CCCCCC; 
+  margin: 0 auto; 
+  width: 90vw; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
 }
 
-/* Regla para el contenedor de texto en el pie de página */
+/* Estilos para el contenedor de texto */
 .text-container {
   font-size: 0.8125rem;
-  color: #CCCCCC;
-  margin: 0 auto;
-  padding-top: 2%;
+  width: 90vw; 
+  color: #CCCCCC; 
+  margin: 0 auto; 
+  padding-top: 2%; 
 }
 
-/* Regla para el contenedor de descripción (dsc-container) en el pie */
+/* Estilos para el contenedor de descripción */
 .dsc-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2%;
-  padding-bottom: 2.5%;
+  display: flex; 
+  flex-direction: row; 
+  gap: 2%; 
+  padding-bottom: 2.5%; 
 }
 
-/* Regla para las columnas de contenido en el pie de página */
+/* Estilos para las columnas del pie de página */
 .columnc {
-  font-size: 0.8125rem;
-  color: #e7e7e7;
-  display: flex;
-  flex-direction: column;
+  font-size: 0.8125rem; 
+  color: #e7e7e7; 
+  display: flex; 
+  flex-direction: column; 
 }
 
-/* Regla para el espaciado interno de cada columna */
+/* Estilos para los elementos dentro de las columnas */
 .columnc span {
-  padding-bottom: 7%;
+  padding-bottom: 7%; 
 }
 
-/* Regla para los derechos de autor en el pie de página */
+/* Estilos para el texto de derechos de autor */
 .rights {
-  padding-top: 3%;
-  font-size: 0.71rem; /* aprox. 11.36px */
-  width: 45vw;
-  line-height: 1.5625rem; /* aprox. 25px */
+  padding-top: 3%; 
+  font-size: 0.71rem; 
+  width: 45vw; 
+  line-height: 1.5625rem; 
 }
 
-/* Regla para cambiar el color de los span en el pie de página al pasar el cursor */
+/* Estilos para los elementos del pie de página al pasar el ratón */
 footer span:hover {
-  color: #0078E5;
+  color: #0078E5; 
   transition: 0.1s ease;
 }
 
-/* Regla para el contenedor inferior del pie de página */
+/* Estilos para la sección inferior del pie de página */
 .footer-bottom {
-  padding-top: 2%;
+  padding-top: 2%; 
 }
 
-/* Regla para los enlaces en la parte inferior del pie de página */
+/* Estilos para los enlaces de la sección inferior del pie de página */
 .footer-bottom-links {
-  display: flex;
-  gap: 2%;
+  display: flex; 
+  gap: 2%; 
 }
 
-/* Regla para los iconos en la parte inferior del pie de página */
+/* Estilos para los íconos de la sección inferior del pie de página */
 .footer-bottom-icons {
-  display: flex;
-  gap: 2%;
+  display: flex; 
+  gap: 2%; 
 }
 
 /* Regla para pantallas con un ancho máximo de 62.5rem (1000px) */

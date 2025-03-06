@@ -10,6 +10,14 @@
   --info-color: #bb86fc; /* Púrpura para información */
 }
 
+/* Evita el scroll horizontal y asegura que html y body ocupen el 100% del ancho */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Regla para el cuerpo de la página */
 body {
   background-color: var(--background-color);
@@ -27,6 +35,10 @@ nav {
   color: var(--text-primary);
   padding: 0.625rem;
   text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Regla específica para la barra de navegación con clase bg-dark */
@@ -168,7 +180,11 @@ a{
 /* Regla para el pie de página */
 footer {
   background-color: #202020;
-  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Regla para la primera parte del pie de página */
@@ -185,14 +201,15 @@ footer {
 
 /* Regla para el contenedor principal del pie de página */
 .footer-container {
+  width: 100%;
   padding-top: 2%;
   font-size: 2rem;
   color: #CCCCCC;
-  margin: 0 auto;
-  width: 90vw;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* Regla para el contenedor de texto en el pie de página */
@@ -411,4 +428,11 @@ nav div ul li {
   width: 1rem !important;
   height: auto !important;
   margin-right: 0.25rem !important;
+}
+
+nav, main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
